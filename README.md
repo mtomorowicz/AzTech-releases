@@ -31,7 +31,7 @@ The app updates itself from this repository. It checks shortly after it starts a
 
 ## Your data
 
-Everything stays on your machine. Settings and reviews are in `%APPDATA%\AzTech`, repository checkouts in `%LOCALAPPDATA%\AzTech`. API keys and tokens are encrypted with Windows' DPAPI.
+The app keeps its data on your machine: settings and reviews in `%APPDATA%\AzTech`, repository checkouts in `%LOCALAPPDATA%\AzTech`. API keys and tokens are encrypted with Windows' DPAPI. A review sends the PR's code to Anthropic or GitHub, whichever agent you pick, and nowhere else.
 
 To uninstall, open Windows **Settings → Apps → Installed apps → AzTech PRADOr**. Your data folders stay; delete them if you want a clean slate.
 
