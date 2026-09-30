@@ -1,4 +1,4 @@
-# AzTech PRADOr
+# AzTech PRador
 
 A dark-mode Windows app for reviewing Azure DevOps pull requests with Claude or GitHub Copilot.
 
@@ -11,7 +11,7 @@ This repository hosts the releases only.
 
 ## Install
 
-1. Download **`AzTech-PRADOr-Setup-<version>.exe`** from the [latest release](https://github.com/mtomorowicz/AzTech-releases/releases/latest).
+1. Download **`AzTech-PRador-Setup-<version>.exe`** from the [latest release](https://github.com/mtomorowicz/AzTech-releases/releases/latest).
 2. Run it. It installs for your Windows user only, with no admin rights needed.
 
 The installer isn't code-signed, so Windows may say "Windows protected your PC". Choose **More info → Run anyway**.
@@ -33,7 +33,7 @@ The app updates itself from this repository. It checks shortly after it starts a
 
 The app keeps its data on your machine: settings and reviews in `%APPDATA%\AzTech`, repository checkouts in `%LOCALAPPDATA%\AzTech`. API keys and tokens are encrypted with Windows' DPAPI. A review sends the PR's code to Anthropic or GitHub, whichever agent you pick, and nowhere else.
 
-To uninstall, open Windows **Settings → Apps → Installed apps → AzTech PRADOr**. Your data folders stay; delete them if you want a clean slate.
+To uninstall, open Windows **Settings → Apps → Installed apps → AzTech PRador**. Your data folders stay; delete them if you want a clean slate.
 
 ## License
 
