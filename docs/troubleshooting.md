@@ -21,6 +21,9 @@ In Settings → Claude, choose **API key**, paste your Anthropic key and click *
 **Copilot: the check fails, or a model is missing**
 **Check Copilot** in Settings says why. With **GitHub sign-in**, sign in with the Copilot CLI or `gh auth login`. With a **GitHub token**, it needs to be a fine-grained token with the Copilot Requests permission, saved with **Save token**. The models listed are the ones your Copilot plan offers.
 
+**Reviews start with another agent than your Default reviewer**
+Your default didn't pass its last check, so reviews start with one that did. Settings says so under **Default reviewer**. Fix what its check said (sign in, say), then click **Check … again** there. The app also checks it again each time it starts.
+
 **OpenCode: no models**
 Connect a provider in OpenCode first: `opencode auth login`, then **Check OpenCode** in Settings.
 

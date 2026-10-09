@@ -26,7 +26,7 @@ The app signs in through these tools. It stores no Azure DevOps password or toke
 
 The first time it starts, the app opens Settings and asks where your pull requests are. Set up Azure DevOps, GitHub, or both:
 
-- **Azure DevOps**: enter your **Organization** (its name, or `https://dev.azure.com/<your-org>`) and the **Project**. If `az` isn't signed in yet, the app says so, with the command to run: `az login`.
+- **Azure DevOps**: enter your **Organization** (its name, or `https://dev.azure.com/<your-org>`) and click **Test connection**. Then pick the **Project** from the list (type to narrow it down), or type its name. If `az` isn't signed in yet, the app says so, with the command to run: `az login`.
 - **GitHub**: click **Check GitHub**, then pick an **Organization** (or your own account). The app uses your `gh` sign-in. For GitHub Enterprise, set the host there first.
 
 Set up an agent (below), then click **Continue**.
@@ -43,7 +43,9 @@ Open **Settings** (the gear in the title bar). Each agent has its own section.
 - **GitHub Copilot**: choose **GitHub sign-in** (your Copilot CLI or GitHub CLI login, enterprise accounts included) or **GitHub token** (paste a fine-grained token with the Copilot Requests permission and click **Save token**), then **Check Copilot**. It lists the models your plan offers.
 - **OpenCode**: connect a provider in OpenCode first (`opencode auth login`, once for each), then **Check OpenCode**. It lists the models you've connected. No OpenCode on your machine? **Sign in…** opens the copy the app uses.
 
-Each agent has a default **model** and **effort**: higher effort thinks harder, and takes longer and costs more. **Default reviewer** picks the agent new reviews start with.
+Each agent has a default **model** and **effort**: higher effort thinks harder, and takes longer and costs more. **Default reviewer** picks the agent new reviews start with. If that agent didn't pass its last check, reviews start with one that did, and Settings says so.
+
+Installed a command-line tool (the Azure CLI, GitHub CLI, Copilot CLI or OpenCode) while the app was running? It's found without a restart.
 
 Then click **Save changes** at the bottom (**Continue** the first time). Your choices, such as **API key** for Claude, are kept only then; the key and token are saved by their own buttons.
 
