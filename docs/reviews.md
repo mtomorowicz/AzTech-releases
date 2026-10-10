@@ -4,7 +4,7 @@ An agent reviews the PR the way a colleague would: it reads the changes, looks a
 
 ## The agents
 
-Each agent has its own tab in the panel on the right: **Claude**, **Copilot** (GitHub Copilot) and **OpenCode**. Set up the ones you want in Settings (see [Getting started](getting-started.md#set-up-an-agent)). If Copilot or OpenCode isn't set up, its tab says so, with a link to Settings.
+The agents are **Claude**, **Copilot** (GitHub Copilot) and **OpenCode**. Set up the ones you want in Settings (see [Getting started](getting-started.md#set-up-an-agent)): a PR offers only those, each with its own tab in the panel on the right. An agent that reviewed the PR earlier keeps its tab, so its review stays in reach. With nothing set up yet, your default reviewer has a tab, and it says what's missing, with a link to Settings. Settings lists who's set up, under **Default reviewer**.
 
 You can run more than one on the same PR and compare them, and review several PRs at once.
 

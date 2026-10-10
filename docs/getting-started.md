@@ -45,6 +45,8 @@ Open **Settings** (the gear in the title bar). Each agent has its own section.
 
 Each agent has a default **model** and **effort**: higher effort thinks harder, and takes longer and costs more. **Default reviewer** picks the agent new reviews start with. If that agent didn't pass its last check, reviews start with one that did, and Settings says so.
 
+Settings also lists which agents are set up on this machine. A PR offers only those: its review tabs, **Ask AI** and fix mode. Claude counts once its key is saved or Claude Code is signed in; Copilot and OpenCode once a check passes, or a review of theirs finishes.
+
 Installed a command-line tool (the Azure CLI, GitHub CLI, Copilot CLI or OpenCode) while the app was running? It's found without a restart.
 
 Then click **Save changes** at the bottom (**Continue** the first time). Your choices, such as **API key** for Claude, are kept only then; the key and token are saved by their own buttons.
