@@ -49,7 +49,7 @@ Settings also lists which agents are set up on this machine. A PR offers only th
 
 Installed a command-line tool (the Azure CLI, GitHub CLI, Copilot CLI or OpenCode) while the app was running? It's found without a restart.
 
-Then click **Save changes** at the bottom (**Continue** the first time). Your choices, such as **API key** for Claude, are kept only then; the key and token are saved by their own buttons.
+Then click **Save changes** at the bottom (**Continue** the first time). Your choices, such as **API key** for Claude, are kept only then; the key and token are saved by their own buttons. **Unsaved changes** next to the button says when there is something to save. Leave Settings with changes you haven't saved, and the app asks whether to save them, discard them, or keep editing.
 
 Each agent needs its runtime, about 40–110 MB, downloaded once and kept: Claude's with its first review, Copilot's and OpenCode's when you check them in Settings or open their tab. An update of the app sometimes brings a newer one.
 
