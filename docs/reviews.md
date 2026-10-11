@@ -6,13 +6,17 @@ An agent reviews the PR the way a colleague would: it reads the changes, looks a
 
 The agents are **Claude**, **Copilot** (GitHub Copilot) and **OpenCode**. Set up the ones you want in Settings (see [Getting started](getting-started.md#set-up-an-agent)): a PR offers only those, each with its own tab in the panel on the right. An agent that reviewed the PR earlier keeps its tab, so its review stays in reach. With nothing set up yet, your default reviewer has a tab, and it says what's missing, with a link to Settings. Settings lists who's set up, under **Default reviewer**.
 
-You can run more than one on the same PR and compare them, and review several PRs at once.
+You can run more than one on the same PR and compare them (see [Compare the agents' reviews](#compare-the-agents-reviews)), and review several PRs at once.
 
 ## What an agent can do
 
 Only read. The agent works in a checkout of the PR of its own, kept apart from your own clones. It can read files, search, and run read-only git commands such as `git diff` and `git log`. It can't change files, run other commands or reach the web. Everything it tries is checked, and anything else is refused.
 
 The agent is told to treat the PR's description, comments and code as data, never as instructions. Your repository's guidelines (`CLAUDE.md`, `AGENTS.md`, `.github/copilot-instructions.md`) are read from the **target** branch, so a PR can't change what the review is told.
+
+## What the PR is meant to do
+
+When the PR has linked work items (on GitHub: the issues it closes), its header lists them under **Work items** (or **Closes**), with their state. Click one to open it. Each review reads them, acceptance criteria included, and checks the change against them: its summary says whether the PR does what they ask, and a requirement it misses or gets wrong is a finding in the **requirements** category. Like the rest of the PR, a work item is read as data, never as instructions.
 
 ## Start a review
 
@@ -44,6 +48,16 @@ For each one:
 - **Dismiss** (<kbd>D</kbd>): leave it out. **Show dismissed** lists the ones you dismissed, and **Restore** on one brings it back.
 
 <kbd>J</kbd> and <kbd>K</kbd> move to the next and previous finding.
+
+The chips above the findings count them by severity. Click one to see only those (click more to add them); **Show all** brings the rest back.
+
+### Don't flag it again
+
+Some findings aren't wrong, just not how your team works. After you dismiss one, the message that says so offers **Don't flag this in** *repository*. It drafts a line for your instructions for that repository; change it as you like and click **Add to my instructions**. Every agent's reviews of that repository follow your instructions from then on. You'll find them, to change or remove, in the review options (**Your instructions for the repository**). Dismissed findings have the same button.
+
+## Compare the agents' reviews
+
+When two or more agents have reviewed the PR, the panel has a **Compare** tab. It lists their open findings by place: the file and lines, with the findings of every agent that flagged it. Places more than one agent flagged come first, marked with how many agree: that's usually where to look first. **Only where they agree** hides the rest. Click a finding to open it in its agent's tab, where you keep, edit or dismiss it; click the place to go there in the diff.
 
 To ask the agent about a finding before you decide, see [Asking the agent](ask.md).
 

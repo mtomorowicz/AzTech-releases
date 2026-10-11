@@ -10,7 +10,7 @@ Not in a review: review agents only read a checkout of the PR, kept apart from y
 
 ### Could a PR trick the agent?
 
-The app assumes it might try. The PR's description, comments and code go to the agent as data, and it's told never to follow instructions in them. Your repository's guidelines are read from the target branch, so a PR can't change them. And a review agent can only read, whatever it's told.
+The app assumes it might try. The PR's description, comments, code and linked work items go to the agent as data, and it's told never to follow instructions in them. Your repository's guidelines are read from the target branch, so a PR can't change them. And a review agent can only read, whatever it's told.
 
 ### Which agent should I use?
 
