@@ -42,6 +42,10 @@ Turn on **Re-review a PR after its author pushes**, below it, and a PR you've re
 
 They only produce findings. **Nothing is posted**: you go through them and post as usual.
 
+## A summary of your day
+
+Turn on **A summary of my day** in Settings → Notifications and pick the hour (9:00 to begin with). Once a day, the first time the app runs after that hour (or when you unlock your computer), the bell and a Windows notification sum up what waits for you: how many PRs wait for your review and how old the oldest is, your own open PRs (and how many have conflicts), and what's unread. Click it in the bell to see the PRs that need you. It's off to begin with, and says nothing on a day with nothing to say.
+
 ## The tray
 
 When you close the window, the app keeps running in the system tray, so notifications keep coming. The tray icon gets a dot when some are unread; hover over it for how many. To quit, right-click the tray icon → **Quit AzTech PRador**. To quit when you close the window instead, turn off **Keep AzTech PRador running in the system tray when the window is closed**, near the bottom of Settings.

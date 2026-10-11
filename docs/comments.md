@@ -40,6 +40,16 @@ Or click **Add to drafts** to post it later, with your other comments: see [Draf
 
 The comment box's **Ask** button (**Ask Claude**, say) sends your text to the agent as a question instead. See [Ask about some lines](how-to/ask-about-lines.md).
 
+## Writing a comment
+
+Every comment and reply box takes Markdown:
+
+- **Preview**, above the box, shows it as it will look; **Write** goes back.
+- Type **@** and the start of a name to mention someone on the PR: its author, reviewers and the people in its threads. Pick one with <kbd>Tab</kbd> (or <kbd>↑</kbd> <kbd>↓</kbd> first), or click it. Azure DevOps writes a mention as the person's id, so the box shows who it is underneath; Preview shows the name.
+- **Saved replies** puts one of your saved replies in the box. To save one, write it, then **Saved replies** → **Save this as a reply**. **Manage…** (or <kbd>Ctrl</kbd>+<kbd>K</kbd> → "Saved replies…") renames, reorders and deletes them. You can keep 50.
+
+<kbd>Ctrl</kbd>+<kbd>Enter</kbd> posts (after the confirmation, as always) and <kbd>Esc</kbd> cancels.
+
 ## Drafts
 
 Going through a PR, you often want to write all your comments first and post them in one go. **Add to drafts**, in the comment box and in a thread's reply box, keeps a comment or reply for later instead of posting it. Nothing goes to Azure DevOps or GitHub yet.

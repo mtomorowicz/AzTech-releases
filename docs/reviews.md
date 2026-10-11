@@ -49,6 +49,8 @@ For each one:
 
 <kbd>J</kbd> and <kbd>K</kbd> move to the next and previous finding.
 
+Under the summary, **Reading order** lists the PR's files in the order the agent suggests reading them, each with what it does in the change: where the change starts, then what builds on it, tests last. Click one to open it; a tick shows the ones you've marked viewed.
+
 The chips above the findings count them by severity. Click one to see only those (click more to add them); **Show all** brings the rest back.
 
 ### Don't flag it again
@@ -97,7 +99,7 @@ Have your own work reviewed before anyone else sees it: <kbd>Ctrl</kbd>+<kbd>K</
 
 The review reads what your branch adds since it left the target: its commits, including ones you haven't pushed yet. Changes you haven't committed aren't part of it, and the review says how many files have them. The agent works in the app's own copy, so your checkout isn't changed. Nothing is posted: the findings are for you, to fix before you open the PR. **Export…** saves them as a Markdown file.
 
-The latest review of each repository is kept on this computer, and shows when you open it again. Branch reviews count in **Usage and spend** and towards your monthly budget.
+The latest review of each repository is kept on this computer, and shows when you open it again. Branch reviews, and PR descriptions an agent writes for you, count in **Usage and spend** and towards your monthly budget.
 
 ## Several reviews at once
 
@@ -117,4 +119,4 @@ Set a **Monthly AI budget** near the bottom of Settings to be told, in the bell,
 
 ## Export
 
-The download icon on the summary (or <kbd>Ctrl</kbd>+<kbd>K</kbd> → "Export this review to Markdown…") saves the review as a Markdown file: the PR, the agent, its verdict and summary, every finding with its comment and your questions about it, and the dismissed ones at the end.
+The download icon on the summary (or <kbd>Ctrl</kbd>+<kbd>K</kbd> → "Export this review to Markdown…") saves the review as a Markdown file: the PR, the agent, its verdict, summary and reading order, every finding with its comment and your questions about it, and the dismissed ones at the end.

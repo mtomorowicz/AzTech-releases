@@ -24,6 +24,10 @@ A review keeps what it was told, even if you change the areas later.
 
 They're saved on your machine, for you.
 
+## Take them to another computer, or share them
+
+Settings → **Export…** (next to **Saved replies…**) saves your focus areas, your instructions for each repository and your saved replies to a file. Your accounts and keys are never in it. **Import…** reads such a file, say a teammate's, and says what it would change before it does: your focus areas replaced by the file's, instructions added (or replacing yours) for its repositories, and its saved replies you don't have yet added.
+
 ## The team's rules: guidelines in the repository
 
 If the repository has a `CLAUDE.md`, `AGENTS.md` or `.github/copilot-instructions.md`, every review reads it, from the PR's **target** branch. That's the place for rules the whole team shares.
