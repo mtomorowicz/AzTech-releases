@@ -31,7 +31,7 @@ On GitHub, a thread on code that has changed since shows with its file, not on a
 
 1. Hover over a line in the diff and click the **+** in the margin.
    For several lines, select them and click the **+** on one of them, or press <kbd>C</kbd>. It's in the right-click menu too.
-2. Write the comment.
+2. Write the comment. To propose a fix, click **Suggest a change** above the box: the lines go in as a suggested change, exactly as they are now. Edit them into what they should read, and the author applies your version with one click on Azure DevOps or GitHub. It's offered on new code only (deleted code can't be changed).
 3. Post it, and confirm. The comment lands on the same lines in Azure DevOps or GitHub.
 
 You can comment on new code and, side by side, on deleted lines. Lines you pick on the old side that the PR didn't change go on the new code, at their new line numbers.
