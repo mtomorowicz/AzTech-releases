@@ -96,6 +96,12 @@ A review you started that finishes (or fails) while its PR isn't on screen is an
 
 Each review shows what it cost: dollars for Claude and OpenCode, AI Credits for Copilot. Hover over it to see the tokens: sent, read from the cache, written to it, and the output. Failed and stopped reviews show what they used too.
 
+### Usage and spend
+
+<kbd>Ctrl</kbd>+<kbd>K</kbd> → "Usage and spend" (or the link under **Monthly AI budget** in Settings) adds it up: today, the last 7 days, this month, or everything kept on this computer. It shows what was spent, how many reviews (and how many of them automatic) and questions, by agent and by repository. It also shows the follow-up questions by how long after the session's last call they came: within 5 minutes, a question re-reads the session cheaply from the provider's cache; later, it pays to read all of it again.
+
+Set a **Monthly AI budget** near the bottom of Settings to be told, in the bell, when the month's spend passes it. Copilot's AI Credits aren't dollars, so they don't count towards it.
+
 ## Export
 
 The download icon on the summary (or <kbd>Ctrl</kbd>+<kbd>K</kbd> → "Export this review to Markdown…") saves the review as a Markdown file: the PR, the agent, its verdict and summary, every finding with its comment and your questions about it, and the dismissed ones at the end.

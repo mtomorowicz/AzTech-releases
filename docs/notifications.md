@@ -29,7 +29,15 @@ Open the repository menu above the PR list (it says **All repos** until you pick
 
 Turn on **Automatically review new PRs with your default reviewer** in Settings → Notifications. It needs **New pull requests in watched repositories** on. New PRs in watched repositories are then reviewed as they arrive, in the background, and the notification tells you when the findings are ready.
 
-Automatic reviews use your default agent, model, effort, focus and budget cap. A draft that was reviewed and is then published gets a review of just what changed. Later pushes to a PR aren't reviewed on their own: use **Review new changes** (see [Re-review after a push](how-to/re-review-after-a-push.md)).
+Automatic reviews use your default agent, model, effort, focus and budget cap. A draft that was reviewed and is then published gets a review of just what changed.
+
+### Re-review after a push
+
+Turn on **Re-review a PR after its author pushes**, below it, and a PR you've reviewed gets a review of what's new once the author stops pushing for 10 minutes. It's done by the agent that reviewed the PR, picks up your earlier decisions, and marks the findings the push fixed as resolved. The notification says how it went: **Re-review after a push**, with how many findings were fixed, how many are new and what's still open. It covers PRs you're a reviewer on and PRs in watched repositories, and it works without automatic reviews of new PRs.
+
+### A daily limit
+
+**At most … automatic reviews a day** (20 to begin with) caps both kinds together, so a busy day can't run up a bill. Once it's reached, the bell says so, and they start again the next day. 0 means no limit.
 
 They only produce findings. **Nothing is posted**: you go through them and post as usual.
 

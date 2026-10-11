@@ -19,6 +19,6 @@ If the author rebased or force-pushed, the summary says the PR's commits changed
 
 After pushing fixes from [fix mode](../fix-mode.md), **Re-review the changes** in the fix window does the same, by the agent that reviewed the PR. It uses the fix session's model and effort when that's the agent that fixed it.
 
-## Not automatic
+## Automatically
 
-[Automatic reviews](../notifications.md#automatic-reviews) review new PRs as they arrive, not later pushes. After a push, start the re-review yourself.
+Turn on **Re-review a PR after its author pushes** in Settings → Notifications, and this happens on its own: once the author stops pushing for 10 minutes, the agent that reviewed the PR reviews what changed, and a notification says what got fixed. See [Re-review after a push](../notifications.md#re-review-after-a-push).
