@@ -45,7 +45,7 @@ The comment box's **Ask** button (**Ask Claude**, say) sends your text to the ag
 Every comment and reply box takes Markdown:
 
 - **Preview**, above the box, shows it as it will look; **Write** goes back.
-- Type **@** and the start of a name to mention someone on the PR: its author, reviewers and the people in its threads. Pick one with <kbd>Tab</kbd> (or <kbd>↑</kbd> <kbd>↓</kbd> first), or click it. Azure DevOps writes a mention as the person's id, so the box shows who it is underneath; Preview shows the name.
+- Type **@** and the start of a name to mention someone on the PR: its author, reviewers and the people in its threads. Pick one with <kbd>Tab</kbd> (or <kbd>↑</kbd> <kbd>↓</kbd> first), or click it: the box shows **@** and their name (on GitHub, their user name), and says underneath who you mention. Posted, it's a real mention: they're notified. Typing someone's whole name after **@** works too.
 - **Saved replies** puts one of your saved replies in the box. To save one, write it, then **Saved replies** → **Save this as a reply**. **Manage…** (or <kbd>Ctrl</kbd>+<kbd>K</kbd> → "Saved replies…") renames, reorders and deletes them. You can keep 50.
 
 <kbd>Ctrl</kbd>+<kbd>Enter</kbd> posts (after the confirmation, as always) and <kbd>Esc</kbd> cancels.
