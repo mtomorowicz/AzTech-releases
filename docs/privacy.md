@@ -4,7 +4,7 @@
 
 Everything the app keeps is on your computer:
 
-- settings, reviews, your questions, notifications and the files you've marked viewed in `%APPDATA%\AzTech`;
+- settings, reviews, your questions, notifications, the files you've marked viewed and the people you've mentioned from outside a PR in `%APPDATA%\AzTech`;
 - the clones and PR checkouts that reviews read, and the agents' runtimes, in `%LOCALAPPDATA%\AzTech`.
 
 Your Anthropic API key and GitHub token are encrypted with Windows' own data protection for your user account. The app keeps no password or token for Azure DevOps: it asks the Azure CLI for a short-lived token, and holds it in memory only until it expires.
