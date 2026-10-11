@@ -8,7 +8,7 @@ For your own PRs: an agent fixes what the review found, or what a reviewer asked
 
 ![Fix mode's setup: your folder, the agent, and how commands are approved](images/fix-setup.png)
 
-1. **Link your checkout…**: pick the folder of your clone. You do this once for each repository.
+1. **Link your checkout…**: pick the folder of your clone. You do this once for each repository (the same link is used to [review a branch before its PR](reviews.md#review-a-branch-before-its-pr)).
    The app checks that the folder is a clone of the PR's repository, on the PR's branch, with its latest commit (commits of yours that aren't pushed yet are fine). If files have uncommitted changes, it says so, and **Start fixing** waits until you tick **Start anyway**: the agent's changes would mix with yours.
 2. Pick the **agent** (Claude, Copilot or OpenCode, among those set up on this machine), its **model** and **effort** for this session. They start as in Settings.
 3. Pick how commands are approved:

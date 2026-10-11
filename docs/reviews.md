@@ -86,6 +86,19 @@ When the author pushes after your review, the summary says so: **Review new chan
 
 A review always reads the newest commits of the PR's branch, even ones pushed seconds ago.
 
+## Review a branch before its PR
+
+Have your own work reviewed before anyone else sees it: <kbd>Ctrl</kbd>+<kbd>K</kbd> → "Review a branch before its PR…".
+
+1. Pick the **repository**, and **Link checkout…**: the folder of your clone. You do this once for each repository, and fix mode uses the same link. The app checks that the folder is a clone of that repository.
+2. The branch your checkout is on is the one reviewed, against **Into**: the repository's default branch, unless you type another.
+3. Pick the **agent** (among those set up on this machine). The model, effort and focus areas are those in Settings. You can say what to look at in particular.
+4. **Review the branch**. **Stop** stops it.
+
+The review reads what your branch adds since it left the target: its commits, including ones you haven't pushed yet. Changes you haven't committed aren't part of it, and the review says how many files have them. The agent works in the app's own copy, so your checkout isn't changed. Nothing is posted: the findings are for you, to fix before you open the PR. **Export…** saves them as a Markdown file.
+
+The latest review of each repository is kept on this computer, and shows when you open it again. Branch reviews count in **Usage and spend** and towards your monthly budget.
+
 ## Several reviews at once
 
 The pulse icon in the title bar (next to the bell) shows how many reviews are running. It opens the **reviews panel**: each review running now, with what it's doing and for how long, and a **Stop**, and the ones that finished, with their findings or why they failed. Click one to open its PR on that review.
