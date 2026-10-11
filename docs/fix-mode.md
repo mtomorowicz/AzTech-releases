@@ -47,6 +47,6 @@ Both wait while the agent is working. The agent never commits or pushes itself: 
 
 ## Check the fixes
 
-After a push, **Re-review the changes** reviews what changed since the review, and checks whether the findings are fixed. The agent that reviewed the PR does it: the fixing agent if it did, with the session's model and effort; otherwise the agent that did, with its own model and the session's effort. The button's tooltip says which. The re-review shows in the main window.
+After a push, **Re-review the changes** reviews what changed since the review, and checks whether the findings are fixed. The agent that reviewed the PR does it: the fixing agent if it did, with the session's model and effort; otherwise the agent that did, with its own model and the session's effort. The button's tooltip says which. The re-review shows in the main window, with the open comment threads the push looks to address: tick the ones to resolve, change the reply if you like, and **Resolve** them together after one confirmation.
 
 See [Fix your own PR](how-to/fix-your-own-pr.md) for a walk-through.

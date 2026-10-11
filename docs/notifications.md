@@ -13,9 +13,10 @@ You're told when:
 - someone replies in a thread you commented in;
 - someone else resolves a thread you commented in;
 - an automatic review has finished;
-- a review you started finishes, or fails, while its PR isn't on screen.
+- a review you started finishes, or fails, while its PR isn't on screen;
+- something happens on one of **your own PRs**: a reviewer votes, someone starts a comment thread, it gets merge conflicts, a required check fails, or it's completed or abandoned.
 
-Settings → Notifications has a switch for each of the first four. Each also shows as a Windows notification while the app is running, including from the tray.
+Settings → Notifications has a switch for each of the first four, and **News about my own pull requests** for the last. Each also shows as a Windows notification while the app is running, including from the tray.
 
 **Send test notification** in Settings checks they get through. If you don't see it, check Windows Settings → System → Notifications, and Do not disturb.
 
