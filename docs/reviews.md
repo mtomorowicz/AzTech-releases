@@ -65,6 +65,7 @@ To ask the agent about a finding before you decide, see [Asking the agent](ask.m
 
 **Review & post** shows exactly what will go on the PR:
 
+- your own comments waiting in your [drafts](comments.md#drafts);
 - every comment you kept, at its file and line;
 - an optional overall comment, written from the review's summary;
 - an optional vote.
@@ -72,6 +73,10 @@ To ask the agent about a finding before you decide, see [Asking the agent](ask.m
 ![The confirmation before posting: each comment, a summary and a vote](images/post-dialog.png)
 
 Nothing is posted until you click **Post**. Comments you've posted are marked as posted, so they're never posted twice.
+
+### Suggested changes
+
+When a kept finding has a fix for the lines it's on, **Post fixes as suggested changes** posts that fix as a suggestion: the author applies it on Azure DevOps or GitHub with one click, instead of copying code from your comment. The app indents the fix as the file is indented there. It's on for GitHub to begin with; on Azure DevOps, turn it on once you've tried **Apply** on a PR of your own. The app remembers your choice for each. When the PR has had new commits since the review, its lines may have moved, so fixes go as code in the comment instead.
 
 On GitHub, the comments go on the PR as one GitHub review. A comment on a line GitHub won't take goes on the PR with its location written in.
 

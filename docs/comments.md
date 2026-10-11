@@ -13,7 +13,7 @@ From here you can:
 - **edit** your own comments;
 - write a **new comment** on the PR.
 
-Each of these shows a confirmation with exactly what will change before anything is posted.
+Each of these shows a confirmation with exactly what will change before anything is posted. Or keep your comments and replies in your drafts and post them together: see [Drafts](#drafts).
 
 **Ask AI** on a thread asks an agent about it. See [Asking the agent](ask.md#about-a-comment-thread).
 
@@ -36,4 +36,18 @@ On GitHub, a thread on code that has changed since shows with its file, not on a
 
 You can comment on new code and, side by side, on deleted lines. Lines you pick on the old side that the PR didn't change go on the new code, at their new line numbers.
 
+Or click **Add to drafts** to post it later, with your other comments: see [Drafts](#drafts).
+
 The comment box's **Ask** button (**Ask Claude**, say) sends your text to the agent as a question instead. See [Ask about some lines](how-to/ask-about-lines.md).
+
+## Drafts
+
+Going through a PR, you often want to write all your comments first and post them in one go. **Add to drafts**, in the comment box and in a thread's reply box, keeps a comment or reply for later instead of posting it. Nothing goes to Azure DevOps or GitHub yet.
+
+- Your drafts are at the top of the **Comments** tab, where you can edit or delete them. Click a draft's place to see its lines.
+- In the diff, a draft's line has an amber speech bubble.
+- The PR's header says how many you have: **2 drafts · Post…**.
+
+**Post…** (in the header or above your drafts) opens the Post dialog. It lists your drafts, ticked, above the review's kept comments, with the summary and the vote. One **Post** sends them all, and the dialog shows exactly what that is first. Posted drafts leave the list; one that fails stays, with why.
+
+Your drafts are kept on this computer, per PR, until you post or delete them.
