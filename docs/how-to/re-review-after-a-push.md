@@ -9,6 +9,8 @@ You reviewed a PR, the author pushed fixes, and you want to know if they're righ
 
 **Full re-review** instead starts again from scratch, as if there had been no review.
 
+To read the push yourself, pick **Since you last looked** or **Since Claude's review** in the menu next to **Files**: the file list and the diff then show only what changed since. See [Only what's new since you last looked](../pull-requests.md#only-whats-new-since-you-last-looked).
+
 ## When the history was rewritten
 
 If the author rebased or force-pushed, the summary says the PR's commits changed. **Review new changes** still reviews what changed in the code. If the commit the review read is gone, it does a full review instead.

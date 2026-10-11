@@ -24,6 +24,7 @@ In a PR's own window (popped out), <kbd>Ctrl</kbd>+<kbd>K</kbd> and <kbd>Ctrl</k
 | <kbd>F</kbd> | Show or hide the file list |
 | <kbd>/</kbd> | Filter the files (<kbd>↑</kbd> / <kbd>↓</kbd> open the previous / next one, <kbd>Esc</kbd> clears) |
 | <kbd>W</kbd> | The diff: only the changes, or the whole file |
+| <kbd>V</kbd> | Mark the file on screen viewed and open the next one you haven't viewed (again: not viewed) |
 | <kbd>C</kbd> | Comment on the selected lines of the diff |
 | <kbd>Ctrl</kbd> + scroll | Text size of the review and comments panel |
 

@@ -91,6 +91,24 @@ The diff shows the old and new versions side by side. <kbd>W</kbd> switches betw
 - The toggles under the box show only added (**A**), modified (**M**), deleted (**D**) or renamed (**R**) files, or files with **Findings** or open **Comments**.
 - <kbd>↑</kbd> / <kbd>↓</kbd> open the previous or next file in the list, and <kbd>Esc</kbd> clears the filter.
 
+### Only what's new since you last looked
+
+After the author pushes, you don't have to read the whole PR again. The menu next to **Files** (it says **All changes**) picks what the file list and the diff show:
+
+- **Since you last looked**: what changed since the version that was on your screen the last time you had the PR open. It counts once the PR has been in front of you for a few seconds, with the window in focus.
+- **Since Claude's review** (or Copilot's, or OpenCode's): what changed since that review.
+- **Since update 3**, and each earlier update (Azure DevOps). The newest says **the last update only**.
+
+The list then has only the files that changed since, and each diff compares with that version: its old side is the file as it was then, and the diff header says what it's since. **Show all changes** goes back. A file that didn't change since (opened from a finding or a comment, say) shows all of the PR's changes to it, and its header says **All its changes**. While you compare, comments go on the new code: the old side is an earlier update, not the code before the PR.
+
+On GitHub the versions are commits. If the author force-pushed, an earlier commit may be gone, and the app says so.
+
+### Viewed files
+
+Tick a file in the list to mark it viewed, or press <kbd>V</kbd> to mark the file on screen and open the next one you haven't viewed. The bar under the filter box counts them, and the **Unviewed** toggle lists the rest.
+
+When a push changes a file you'd viewed, its tick becomes an amber dot: changed since you viewed it, and counted as unviewed again. Files the push didn't touch keep their ticks. Your ticks stay on this computer: nothing goes to Azure DevOps or GitHub.
+
 ### In a window of its own
 
 The pop-out button in the header moves the PR into a window of its own, with its diff, review, comments and votes. Put it on another screen and keep working on other PRs in the main window. **Pin back** brings it back to the main window.
