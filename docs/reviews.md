@@ -48,6 +48,7 @@ For each one:
 - **Keep** (<kbd>A</kbd>): it goes on the PR when you post.
 - **Edit** (<kbd>E</kbd>): change the comment first.
 - **Dismiss** (<kbd>D</kbd>): leave it out. **Show dismissed** lists the ones you dismissed, and **Restore** on one brings it back.
+- **Mark fixed**: once the author has fixed it (or you have, in [fix mode](fix-mode.md)), posted findings too. It shows as **Fixed**, isn't counted or posted any more, and **Fixed** again takes the mark back. A fix session marks the findings its agent says it fixed by itself. When the PR gets new commits, **Review new changes** checks every earlier finding: one it finds still there loses the mark.
 
 <kbd>J</kbd> and <kbd>K</kbd> move to the next and previous finding.
 

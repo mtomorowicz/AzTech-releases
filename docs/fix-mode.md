@@ -18,7 +18,9 @@ For your own PRs: an agent fixes what the review found, or what a reviewer asked
 
 ## Tell it what to fix
 
-Write in the box at the bottom, like a chat: "fix the findings", "do what Tom asked in the comments", "the off-by-one in retry.ts". The agent knows the PR, the reviews' findings and the open comment threads.
+Write in the box at the bottom, like a chat: "fix the findings", "do what Tom asked in the comments", "the off-by-one in retry.ts". The agent knows the PR, the reviews' findings still to fix and the open comment threads.
+
+When the agent says it fixed findings, they're marked **Fixed** in their review, and the session says which. You can take a mark back on the finding in the main window. A re-review after you push checks them.
 
 ![A fix session: the agent asks to run the tests](images/fix-session.png)
 
