@@ -13,7 +13,7 @@ For your own PRs: an agent fixes what the review found, or what a reviewer asked
 2. Pick the **agent** (Claude, Copilot or OpenCode, among those set up on this machine), its **model** and **effort** for this session. They start as in Settings.
 3. Pick how commands are approved:
    - **Ask me**: each command waits for your OK.
-   - **Auto**: commands run without asking. You can switch this on or off at any time in the session.
+   - **Auto**: commands run without asking. You can switch this on or off at any time in the session. The first time you pick it, the window explains what it means and asks you to confirm; **Keep asking** stays on Ask.
 4. **Start fixing**.
 
 ## Tell it what to fix
@@ -23,14 +23,14 @@ Write in the box at the bottom, like a chat: "fix the findings", "do what Tom as
 ![A fix session: the agent asks to run the tests](images/fix-session.png)
 
 - **Edits** to files in your folder go ahead.
-- **Commands** (a build, the tests, a code generator) wait for **Allow** or **Deny**. **Always allow** lets commands that start the same way through for the rest of the session. In **Auto** mode, they run without asking. Commands that only read, such as listing files, run without asking, marked "read-only".
+- **Commands** (a build, the tests, a code generator) wait for **Allow** or **Deny**. **Always allow** lets that kind of command through for the rest of the session: the program and its subcommand, such as `dotnet test`. For a command like `node build.js` or `python script.py`, that's every later `node` or `python` command. In **Auto** mode, commands run without asking. Commands the agent's own tools consider read-only, such as listing files, run without asking, marked "read-only".
 - **Blocked**, even in Auto mode:
   - git commands that change anything: committing, pushing, switching branches, `add`, `stash`, `reset` and the like (reading, such as `git diff` or `git log`, is fine);
   - the Azure and GitHub command-line tools (`az`, `gh`);
-  - downloads, web requests and remote connections (`curl`, `ssh`, …);
+  - the common download and remote-connection tools (`curl`, `ssh`, …);
   - publishing packages (`npm publish`, say).
 
-  This check is best effort: a command can be written in ways it doesn't recognize. That's why commands ask first. Turn on Auto only when you trust what the agent will run.
+  The app recognizes these by the program a command starts. It doesn't stop everything that could do the same: a script, a test or another program can still reach the web, run git, or read and change files outside your folder. Allowing a build or the tests also runs code the agent may just have changed. Commands run as you, with your access, though they don't see your Azure DevOps and GitHub tokens (nor, with Claude, the key it signs in with). That's why they ask first: read each one before you allow it. Turn on **Auto** only for work where you'd let the agent run commands on your computer unattended.
 
 Scrolled up? The button at the bottom (or <kbd>End</kbd>) goes back to the latest message.
 
@@ -43,7 +43,7 @@ The **Changes** tab shows what changed in your folder, file by file. <kbd>F</kbd
 - **Commit…**: pick the files. A message is suggested, and you can change it.
 - **Push…**: shows the commits and files that will be pushed, and pushes after you confirm. It never force-pushes.
 
-Both wait while the agent is working. The agent never commits or pushes itself: only you do, with these buttons.
+Both wait while the agent is working. The agent is refused `git commit` and `git push`: you commit and push, with these buttons. **Commit…** runs your repository's git hooks, so if the agent changed a hook script your repository keeps (in `.husky`, say), look at that change before you commit.
 
 ## Check the fixes
 

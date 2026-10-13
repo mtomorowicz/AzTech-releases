@@ -17,4 +17,4 @@ You need a clone of the repository on your machine, on the PR's branch, up to da
 11. In the main window, the re-review lists those threads: **Resolve** them together, with a reply such as "Fixed in 1a2b3c4.", after one confirmation.
 12. When it's ready, **Complete…** in the PR's header merges it (or set auto-complete, to merge once the checks pass).
 
-The agent can't commit, push or switch branches: those are your buttons. See [Fix mode](../fix-mode.md) for everything it can and can't do.
+The agent is refused the git commands that commit, push or switch branches: those are your buttons. That check goes by command name, so read commands before you allow them. See [Fix mode](../fix-mode.md) for everything it can and can't do.

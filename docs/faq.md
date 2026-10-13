@@ -6,7 +6,7 @@ No. Every comment, reply, edit, status change and vote shows a confirmation with
 
 ### Can the AI change my code?
 
-Not in a review: review agents only read a checkout of the PR, kept apart from your own clones. In [fix mode](fix-mode.md), which you start yourself on your own PRs, the agent edits files in the folder you linked. You commit and push, never the agent.
+Not in a review: review agents only read a checkout of the PR, kept apart from your own clones. In [fix mode](fix-mode.md), which you start yourself on your own PRs, the agent edits files in the folder you linked and runs the commands you allow. You commit and push: the agent is refused those git commands.
 
 ### Could a PR trick the agent?
 
