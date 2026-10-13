@@ -25,7 +25,7 @@ When the agent says it fixed findings, they're marked **Fixed** in their review,
 ![A fix session: the agent asks to run the tests](images/fix-session.png)
 
 - **Edits** to files in your folder go ahead.
-- **Commands** (a build, the tests, a code generator) wait for **Allow** or **Deny**. **Always allow** lets that kind of command through for the rest of the session: the program and its subcommand, such as `dotnet test`. For a command like `node build.js` or `python script.py`, that's every later `node` or `python` command. In **Auto** mode, commands run without asking. Commands the agent's own tools consider read-only, such as listing files, run without asking, marked "read-only".
+- **Commands** (a build, the tests, a code generator) wait for **Allow** or **Deny**. **Always allow** lets that kind of command through for the rest of the session, and the button says which: the program and its subcommand, such as `dotnet test`, or a script such as `npm run build`. For a script or an interpreter (`node build.js`, `python script.py`, `pwsh -File fix.ps1`), it's that exact command only. In **Auto** mode, commands run without asking. Commands the agent's own tools consider read-only, such as listing files, run without asking, marked "read-only".
 - **Blocked**, even in Auto mode:
   - git commands that change anything: committing, pushing, switching branches, `add`, `stash`, `reset` and the like (reading, such as `git diff` or `git log`, is fine);
   - the Azure and GitHub command-line tools (`az`, `gh`);
@@ -51,7 +51,7 @@ Then:
 - **Commit…**: pick the files. What the agent changed in this session is picked at first. Files that were already changed before the session started aren't, and say so: tick them if you want them in. A message is suggested, and you can change it.
 - **Push…**: shows the commits and files that will be pushed, and pushes after you confirm. It never force-pushes. When there's nothing to push yet, the tab says why under the buttons.
 
-Both wait while the agent is working. The agent is refused `git commit` and `git push`: you commit and push, with these buttons. **Commit…** runs your repository's git hooks, so if the agent changed a hook script your repository keeps (in `.husky`, say), look at that change before you commit.
+Both wait while the agent is working. The agent is refused `git commit` and `git push`: you commit and push, with these buttons. **Commit…** runs your repository's git hooks. If a hook script your repository keeps (in `.husky`, say) has changes, the dialog lists it: look at it before you commit, or tick **Commit without running hooks**.
 
 ## Check the fixes
 
