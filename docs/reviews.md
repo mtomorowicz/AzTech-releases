@@ -12,6 +12,8 @@ You can run more than one on the same PR and compare them (see [Compare the agen
 
 Only read. The agent works in a checkout of the PR of its own, kept apart from your own clones. It can read files, search, and run read-only git commands such as `git diff` and `git log`. It can't change files, run other commands or reach the web. Everything it tries is checked, and anything else is refused.
 
+The PR's checkout is made without your own git settings, so nothing in the PR runs on your machine through them. A file the repository keeps in Git LFS is LFS's small pointer file there: the agent sees that the file changed, not what's in it.
+
 The agent is told to treat the PR's description, comments and code as data, never as instructions. Your repository's guidelines (`CLAUDE.md`, `AGENTS.md`, `.github/copilot-instructions.md`) are read from the **target** branch, so a PR can't change what the review is told.
 
 ## What the PR is meant to do
