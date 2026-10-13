@@ -25,7 +25,7 @@ The app has no account and no server of its own, and sends no analytics. The age
 
 Review agents only read the PR's checkout: files, search, and read-only git commands. They can't change files, run other commands, or reach the web.
 
-In [fix mode](fix-mode.md), the agent edits files in the folder you linked and runs the commands you allow, or every command in Auto mode. Commands run as you, with your access to your files and the network. The app refuses committing, pushing, switching branches and the common download tools by name, but a command written another way gets past that: see [Fix mode](fix-mode.md#tell-it-what-to-fix).
+In [fix mode](fix-mode.md), the agent edits files in the folder you linked and runs the commands you allow: in Controlled mode also those you listed for the repository, and in Full mode every command. Commands run as you, with your access to your files and the network. The app refuses committing, pushing, switching branches and the common download tools by name, but a command written another way gets past that: see [Fix mode](fix-mode.md#tell-it-what-to-fix).
 
 ## Clearing it
 
