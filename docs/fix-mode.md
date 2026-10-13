@@ -38,10 +38,16 @@ Scrolled up? The button at the bottom (or <kbd>End</kbd>) goes back to the lates
 
 ![The Changes tab: what changed, file by file, with Commit and Push](images/fix-changes.png)
 
-The **Changes** tab shows what changed in your folder, file by file. <kbd>F</kbd> hides the list of files, and you can drag its edge to resize it.
+The **Changes** tab shows what changed in your folder, file by file, and which changes are staged. <kbd>F</kbd> hides the list of files, and you can drag its edge to resize it. Point at a file for what you can do with it:
 
-- **Commit…**: pick the files. A message is suggested, and you can change it.
-- **Push…**: shows the commits and files that will be pushed, and pushes after you confirm. It never force-pushes.
+- **Unstage** takes a staged change out of git's index. The change stays.
+- **Discard…** undoes the file's changes, after you confirm: it goes back to its last commit, or, if it's new, it's deleted.
+- **Keep out of git** is for a file git doesn't know that you never want to commit, such as a local settings file. It's listed in the folder's `.git/info/exclude`, on this machine only, and stops showing as a change. The file stays.
+
+Then:
+
+- **Commit…**: pick the files. What the agent changed in this session is picked at first. Files that were already changed before the session started aren't, and say so: tick them if you want them in. A message is suggested, and you can change it.
+- **Push…**: shows the commits and files that will be pushed, and pushes after you confirm. It never force-pushes. When there's nothing to push yet, the tab says why under the buttons.
 
 Both wait while the agent is working. The agent is refused `git commit` and `git push`: you commit and push, with these buttons. **Commit…** runs your repository's git hooks, so if the agent changed a hook script your repository keeps (in `.husky`, say), look at that change before you commit.
 
