@@ -93,8 +93,13 @@ The buttons above it:
 - The magnifier (or <kbd>Ctrl</kbd>+<kbd>F</kbd>) finds text in the file.
 - **Hide whitespace changes** leaves out changes to the spaces at the start and end of lines, so re-indented code shows as unchanged.
 - **Wrap long lines** wraps them instead of scrolling sideways.
+- **Blame** shows, on the line under the mouse, who last changed it, when, and the first line of that commit's message, on either side.
 
-The last two stay as you leave them.
+The last three stay as you leave them.
+
+**Go to definition**: put the cursor on a name in the diff and press <kbd>F12</kbd> (or <kbd>Ctrl</kbd>+click it). Where it's defined in a file the PR changes, the diff goes there. Anywhere else, the file opens in place, under the line, and <kbd>Esc</kbd> closes it. When there are several candidates, it lists them. The app finds definitions by searching the code at that version for the shapes they take (`class`, `function`, `def`, a method…), in files of the same language: a good guess, not a compiler's answer.
+
+Blame and Go to definition read the app's own copy of the repository, the one reviews use. The first time for a repository, it's copied first, which can take a while.
 
 **Filter the files** with the box at the top of the file list, or press <kbd>/</kbd> from anywhere:
 
