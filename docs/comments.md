@@ -10,6 +10,7 @@ From here you can:
 
 - **reply** to a thread;
 - **resolve** it, or reactivate it (on Azure DevOps there are other statuses too, such as won't fix);
+- **reply and resolve** in one go: write the reply, then **Reply and resolve** ("Fixed in the latest push");
 - **edit** your own comments;
 - write a **new comment** on the PR.
 
