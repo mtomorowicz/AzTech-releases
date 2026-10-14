@@ -33,6 +33,9 @@ Each agent's runtime is downloaded once (about 40–110 MB): Claude's with its f
 **A review failed**
 The review says why, with **Try again**. Its **Activity** tab shows what the agent did up to then. If it stopped at your **budget cap**, raise the cap in Settings.
 
+**"This review didn't read the diff"**
+The agent couldn't run git in the review's checkout, so it read the files without seeing what the PR changed, and its findings may be off. The box says why; click **Review again**. If it happens again, the review's **Activity** tab shows each git command and what went wrong.
+
 **A question cost more than the last one**
 The agent's session wasn't cached any more, so it was read again in full. See [What a question costs](ask.md#what-a-question-costs).
 
