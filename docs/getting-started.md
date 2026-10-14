@@ -3,7 +3,7 @@
 ## Install
 
 1. Download **`AzTech-PRador-Setup-<version>.exe`** from the [latest release](https://github.com/mtomorowicz/AzTech-releases/releases/latest).
-2. Run it and follow the steps. Installing **only for me** needs no admin rights.
+2. Run it and follow the steps. Installing **only for me** needs no admin rights: keep the folder it suggests, which is in your user profile, or pick another of your own. A folder such as `C:\Program Files` needs **anyone who uses this computer** (and admin rights): for **only for me** the installer won't go on with it, and says why.
 
 The installer isn't code-signed, so Windows may say "Windows protected your PC". Choose **More info → Run anyway**.
 
