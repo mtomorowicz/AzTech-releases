@@ -116,6 +116,12 @@ The list then has only the files that changed since, and each diff compares with
 
 On GitHub the versions are commits. If the author force-pushed, an earlier commit may be gone, and the app says so.
 
+### One commit at a time
+
+The same menu lists the PR's commits, oldest first, under **One commit**. Pick one to see only what that commit changed: its files, each against the commit before it, and the commit's message above the list. It helps with a PR whose commits each do one thing.
+
+Comment threads, findings and new comments are about the PR as it is now, so a commit's diff doesn't show them. Clicking a finding or a comment's place goes back to all changes. **Show all changes** does too.
+
 ### Viewed files
 
 Tick a file in the list to mark it viewed, or press <kbd>V</kbd> to mark the file on screen and open the next one you haven't viewed. The bar under the filter box counts them, and the **Unviewed** toggle lists the rest.
