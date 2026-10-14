@@ -36,9 +36,12 @@ You can type the same filters in the search box, with suggestions as you go:
 | `author:"Priya Raman"` | someone else's |
 | `target:release/*` | PRs into a release branch |
 | `repo:api` | PRs in repositories with "api" in the name |
+| `label:needs-qa` | PRs with that label (on Azure DevOps, a tag); `label:team-*` for any starting so |
 | `-is:draft` | a `-` in front leaves them out |
 
 Each tab keeps its own filters, and they're remembered when you restart. When the filters hide every PR, the list says how many are hidden and offers **Clear filters**.
+
+A PR's **labels** (Azure DevOps calls them tags) show on its row, the first three, and in its header. Click one in the header to list the PRs that have it. Words you type in the search box find labels too.
 
 ### Staying up to date
 
