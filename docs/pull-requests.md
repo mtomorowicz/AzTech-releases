@@ -128,6 +128,10 @@ Tick a file in the list to mark it viewed, or press <kbd>V</kbd> to mark the fil
 
 When a push changes a file you'd viewed, its tick becomes an amber dot: changed since you viewed it, and counted as unviewed again. Files the push didn't touch keep their ticks. Your ticks stay on this computer: nothing goes to Azure DevOps or GitHub.
 
+### Your notes
+
+The **Notes** tab of the review panel on the right, after **Comments**, is a page of your own for each PR: what to check, questions for the author, what you've tried. It's saved as you type, and a dot on the tab says a PR has notes. Each PR has its own, and they stay on this computer: they're never posted, and nobody else sees them.
+
 ### In a window of its own
 
 The pop-out button in the header moves the PR into a window of its own, with its diff, review, comments and votes. Put it on another screen and keep working on other PRs in the main window. **Pin back** brings it back to the main window.
