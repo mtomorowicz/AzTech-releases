@@ -84,6 +84,15 @@ The header has the PR's title, branches, author and reviewers with their votes, 
 
 The diff shows the old and new versions side by side. <kbd>W</kbd> switches between only the changes and the whole file. <kbd>F</kbd> shows or hides the file list.
 
+The buttons above it:
+
+- The arrows (or <kbd>N</kbd> and <kbd>P</kbd>) go to the next and previous change in the file.
+- The magnifier (or <kbd>Ctrl</kbd>+<kbd>F</kbd>) finds text in the file.
+- **Hide whitespace changes** leaves out changes to the spaces at the start and end of lines, so re-indented code shows as unchanged.
+- **Wrap long lines** wraps them instead of scrolling sideways.
+
+The last two stay as you leave them.
+
 **Filter the files** with the box at the top of the file list, or press <kbd>/</kbd> from anywhere:
 
 - Words match anywhere in the path, and every word has to match.
