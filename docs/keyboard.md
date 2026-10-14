@@ -20,6 +20,7 @@ In a PR's own window (popped out), <kbd>Ctrl</kbd>+<kbd>K</kbd> and <kbd>Ctrl</k
 | <kbd>Esc</kbd> | Stop the running review (or stop editing a finding) |
 | <kbd>J</kbd> / <kbd>K</kbd> | Next / previous finding |
 | <kbd>A</kbd> / <kbd>E</kbd> / <kbd>D</kbd> | Keep / edit / dismiss the finding |
+| <kbd>O</kbd> | Roll the finding up to one line, or open it (<kbd>Shift</kbd>+<kbd>O</kbd>: all of them) |
 | <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd> | Layout: the diff, both side by side, the panel |
 | <kbd>F</kbd> | Show or hide the file list |
 | <kbd>/</kbd> | Filter the files (<kbd>↑</kbd> / <kbd>↓</kbd> open the previous / next one, <kbd>Esc</kbd> clears) |

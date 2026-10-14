@@ -52,6 +52,8 @@ For each one:
 
 <kbd>J</kbd> and <kbd>K</kbd> move to the next and previous finding.
 
+To scroll less, roll findings up to one line: their severity, title and file. The arrow beside the severity does it (or <kbd>O</kbd> on the finding you're on); click a rolled-up finding to open it again. **Collapse all** and **Expand all**, above the list (or <kbd>Shift</kbd>+<kbd>O</kbd>), do every finding. Findings that need nothing more start rolled up: dismissed, posted and fixed ones. A finding's questions and answers stay folded to one line until you open them.
+
 Under the summary, **Reading order** lists the PR's files in the order the agent suggests reading them, each with what it does in the change: where the change starts, then what builds on it, tests last. Click one to open it; a tick shows the ones you've marked viewed.
 
 The chips above the findings count them by severity. Click one to see only those (click more to add them); **Show all** brings the rest back.
