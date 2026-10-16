@@ -7,6 +7,8 @@ The list on the left has two tabs:
 - **Needs me**: PRs where you're a reviewer, whether you've voted yet or not. On GitHub: PRs asking for your review, plus the ones you've reviewed.
 - **All active**: every active PR, drafts included, in all the project's repositories or the one you pick in the repository menu above the list (it says **All repos** until you pick one).
 
+The tab you're on and the repository you picked are kept when you restart the app. Each project keeps its own repository pick.
+
 Each row shows the title, repository, author, how long ago it was opened, a **Draft** badge, how many files it changes (amber from 50: a big PR; on GitHub, hover over it for the lines added and deleted), your vote, and the PR's builds (failed, building, queued or passed; dimmed when they ran on an earlier version). A **Reviewing** badge means an agent is on it now; **Reviewed** means it's been reviewed, with a dot when the author has pushed since.
 
 <kbd>Ctrl</kbd>+<kbd>B</kbd> collapses the list to a narrow rail that still marks failed and running builds. Drag the list's right edge to make it wider or narrower (double-click the edge for the default width).
@@ -81,7 +83,7 @@ The header has the PR's title, branches, author and reviewers with their votes, 
 - Click the **source branch** to copy its name.
 - Click a **build** to see its pipeline run: where it stopped, its first errors, and a link to it.
 - **Approve** votes on the PR. The menu next to it has the other votes: approve with suggestions, wait for author, reject, or reset your vote (on GitHub: request changes). Every vote shows a confirmation first.
-- The **layout** buttons switch between **Diff**, **Split** and **Review** (<kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>): the diff alone, the diff and the panel side by side, or the panel alone.
+- The **layout** buttons switch between **Diff**, **Split** and **Review** (<kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>): the diff alone, the diff and the panel side by side, or the panel alone. In **Split**, drag the panel's left edge to make it wider or narrower (double-click it for the default width).
 - **Open in ADO** (or **Open in GitHub**) opens the PR in your browser.
 - On **your own PRs**: **Complete…** (**Merge…** on GitHub) merges it. Pick the merge type and the commit message, and whether the source branch is deleted and (Azure DevOps) the linked work items move on. The dialog lists the required checks that haven't passed yet; Azure DevOps may refuse to complete until they do. The menu next to it has **Set auto-complete…** (**Merge when ready…** on GitHub: it merges on its own once the checks pass), **Publish** for a draft, and **Abandon…** (**Close…**). Each asks before it does anything. Completing, setting auto-complete and abandoning ask once more, in a Windows dialog: the change happens only when you confirm there too. **Write the description…**, in the same menu, has an agent write the PR's description from its changes (and its work items): edit it, then **Update the description…** replaces the current one, after a confirmation that shows it.
 
