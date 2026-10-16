@@ -63,6 +63,14 @@ Click the project's name in the title bar (or <kbd>Ctrl</kbd>+<kbd>K</kbd> → "
 
 The title bar switches between Azure DevOps and GitHub. You land where you last were on each. The first time on GitHub, you pick an organization (or your own account).
 
+### Both at once
+
+Once you have an Azure DevOps project and a GitHub organization, pick **Azure DevOps and GitHub** in the same menu: the list shows both, each in a section of its own, Azure DevOps on top. A section's header stays at the top while you scroll through its PRs. Each section has its count, and folds away when you click its header (it stays folded until you open it again). The title bar shows where each side's PRs come from, with a switcher for each (the provider menu before them shows just its icon then).
+
+![The PR list with Azure DevOps and GitHub, a section each](images/both-providers.png)
+
+**Needs me**, **All active**, the filters and the search work across both, and the repository menu groups the repositories under each side. A PR you open uses its own provider's words and votes. Notifications and the morning summary cover both sides. When one side can't be read (signed out, say), its section says why, and the other one still shows. Pick **Azure DevOps** or **GitHub** in the menu to go back to one of them.
+
 Everything works the same on both, with GitHub's words for things:
 
 - Votes are GitHub's reviews: approve, or request changes. GitHub doesn't let you review your own PR, so you can't vote on it.
