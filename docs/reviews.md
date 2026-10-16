@@ -42,10 +42,11 @@ The first review of a repository clones it, and the clone is kept, so later revi
 
 Sometimes a review needs more than the code: the findings report a PR is meant to fix, a specification, your own notes. Attach them to the PR under **Files**, in the review options or on the card that starts a review: **Add files…**, or drop them there.
 
-![Files for the PR's reviews: a findings report and a checklist](images/review-files.png)
+![Files for the PR's reviews: a findings report and a checklist, and the files attached in Azure DevOps](images/review-files.png)
 
 Every review of the PR reads them, whichever agent runs it, re-reviews and questions included, until you take one off with **×**. Say in the **Prompt** what to do with them ("Check that this PR fixes every finding in the report"). The review checks the change against them and says in its summary what it checked. Its summary card lists the files it had.
 
+- **From Azure DevOps**: the row with **Add files…** says how many files are attached in Azure DevOps, to the PR (those put in its comments too) and to its linked work items ("3 in Azure DevOps"). Unfold it and **Add** the ones you want: the app downloads them, and they join the PR's files like your own. GitHub has no such list: download the file and add it from your computer.
 - **What you can attach**: text files of the usual kinds (Markdown, text, logs, JSON, SARIF, CSV, YAML, XML, HTML, diffs) and PDFs, up to 10 per PR and 20 MB each.
 - **PDFs**: a review reads a PDF's text, so a scanned PDF (pictures of pages, with no text in them) can't be attached. Attach its text instead.
 - **Where they go**: the app keeps its own copy, so moving or deleting the original doesn't matter. The files go to the agent's model provider along with the code, and they're never posted to Azure DevOps or GitHub.
