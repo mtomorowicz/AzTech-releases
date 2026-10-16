@@ -24,11 +24,12 @@ When the PR has linked work items (on GitHub: the issues it closes), its header 
 
 Pick a PR, open an agent's tab, and click **Start review** (or press <kbd>R</kbd>). The **Using …** line above the button (and in the panel's header) says what it'll use; click it to change any of it for this review:
 
-![The review options: model, effort, focus, a prompt for this review, and instructions for the repository](images/review-options.png)
+![The review options: model, effort, focus, a prompt for this review, files for the PR's reviews, and instructions for the repository](images/review-options.png)
 
 - **Model** and **effort**: higher effort thinks longer, and costs more.
 - **Focus**: areas to look at hardest, such as security, performance, tests or style. Pick any number. See [Tell reviews what to look for](how-to/focus-areas.md).
 - **Prompt**: anything specific for this review only ("Check the migration is reversible").
+- **Files**: a findings report, a spec or notes for the agent to read along with the code (see [Give the review your files](#give-the-review-your-files)).
 - **Your instructions for the repository**: guidance added to every review of it ("We use MediatR: flag DbContext used directly in controllers").
 
 **Save as default** keeps your choices for new reviews. Settings has the same defaults, and an optional **budget cap** per review for Claude.
@@ -36,6 +37,20 @@ Pick a PR, open an agent's tab, and click **Start review** (or press <kbd>R</kbd
 While the review runs, you see what the agent is doing: the files it reads and the commands it runs. **Cancel** (or <kbd>Esc</kbd>) stops it. Reviews keep running when you open other PRs.
 
 The first review of a repository clones it, and the clone is kept, so later reviews start faster. (Each agent also downloads its runtime once: see [Getting started](getting-started.md#set-up-an-agent).)
+
+### Give the review your files
+
+Sometimes a review needs more than the code: the findings report a PR is meant to fix, a specification, your own notes. Attach them to the PR under **Files**, in the review options or on the card that starts a review: **Add files…**, or drop them there.
+
+![Files for the PR's reviews: a findings report and a checklist](images/review-files.png)
+
+Every review of the PR reads them, whichever agent runs it, re-reviews and questions included, until you take one off with **×**. Say in the **Prompt** what to do with them ("Check that this PR fixes every finding in the report"). The review checks the change against them and says in its summary what it checked. Its summary card lists the files it had.
+
+- **What you can attach**: text files of the usual kinds (Markdown, text, logs, JSON, SARIF, CSV, YAML, XML, HTML, diffs) and PDFs, up to 10 per PR and 20 MB each.
+- **PDFs**: a review reads a PDF's text, so a scanned PDF (pictures of pages, with no text in them) can't be attached. Attach its text instead.
+- **Where they go**: the app keeps its own copy, so moving or deleting the original doesn't matter. The files go to the agent's model provider along with the code, and they're never posted to Azure DevOps or GitHub.
+- **Read as information**: someone else may have written them, so instructions in them can't change how the agent works. It still only reads, and answers the way it always does.
+- **How long they're kept**: 90 days after one was last added or a review last read them.
 
 ## Go through the findings
 
