@@ -65,7 +65,7 @@ The title bar switches between Azure DevOps and GitHub. You land where you last 
 
 ### Both at once
 
-Once you have an Azure DevOps project and a GitHub organization, pick **Azure DevOps and GitHub** in the same menu: the list shows both, each in a section of its own, Azure DevOps on top. A section's header stays at the top while you scroll through its PRs. Each section has its count, and folds away when you click its header (it stays folded until you open it again). The title bar shows where each side's PRs come from, with a switcher for each (the provider menu before them shows just its icon then).
+Once you have an Azure DevOps project and a GitHub organization, pick **Azure DevOps and GitHub** in the same menu: the list shows both, each in a section of its own under a header in its provider's colour (blue for Azure DevOps, grey for GitHub), Azure DevOps on top. A section's header stays at the top while you scroll through its PRs. Each section has its count, and folds away when you click its header (it stays folded until you open it again). The title bar shows where each side's PRs come from, with a switcher for each (the provider menu before them shows just its icon then).
 
 ![The PR list with Azure DevOps and GitHub, a section each](images/both-providers.png)
 
