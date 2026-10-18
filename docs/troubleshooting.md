@@ -56,8 +56,14 @@ It's only on PRs you created.
 **"The folder is on …: check out … first", "The branch is behind the PR: pull first" or "The folder doesn't have the PR's latest commit"**
 Switch your clone to the PR's branch and pull, in your usual git tool, then press <kbd>F5</kbd> in the fix window to check again.
 
-**"The branch and the PR have gone different ways (a force-push?)"**
-Your branch and the PR's have different commits. Sort it out in git (say, reset your branch to the PR's, keeping a copy of any work of yours), then press <kbd>F5</kbd>.
+**"The branch's latest commit isn't the PR's, though its files are the same"**
+You reworded or amended a commit you'd already pushed, and haven't pushed it again: the files are the PR's, the commit isn't. In your git tool, push it with a force-push (with lease), or reset your branch to the PR's. Then click ↻ next to the folder, or press <kbd>F5</kbd>.
+
+**"The branch and the PR have gone different ways"**
+Your branch and the PR's each have commits the other doesn't: it says how many. Sort it out in git (say, reset your branch to the PR's, keeping a copy of any work of yours), then press <kbd>F5</kbd>.
+
+**Start anyway is ticked, and Start fixing still can't be pressed**
+**Start anyway** covers only uncommitted changes. Whatever is in red under **Your checkout** has to be sorted out first; the line beside **Start fixing** says what it's waiting for.
 
 **"This folder is a clone of …, not of …"**
 Link the clone of the PR's repository: **Change…** next to the folder.
