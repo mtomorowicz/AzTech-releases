@@ -63,7 +63,7 @@ The **Changes** tab shows what changed in your folder, file by file, and which c
 
 Then:
 
-- **Commit…**: tick the files to commit: only those are committed, so one file on its own is fine. What the agent changed in this session, and what you staged in the window, is ticked at first. Files that were already changed before the session started aren't, and say so: tick them if you want them in. A message is suggested, and you can change it.
+- **Commit…**: tick the files to commit: only those are committed, so one file on its own is fine. What the agent changed in this session, and what you staged in the window, is ticked at first. **All** and **None**, beside the count, tick or untick every file at once. Files that were already changed before the session started aren't, and say so: tick them if you want them in. A message is suggested, and you can change it.
 - **Push…**: shows the commits and files that will be pushed, and pushes after you confirm, in the window and then in a second, smaller window that lists them again. It never force-pushes. When there's nothing to push yet, the tab says why under the buttons.
 
 Both wait while the agent is working. The agent is refused `git commit` and `git push`: you commit and push, with these buttons. **Commit…** runs your repository's git hooks. If a hook script your repository keeps (in `.husky`, say) has changes, the dialog lists it: look at it before you commit, or tick **Commit without running hooks**.
