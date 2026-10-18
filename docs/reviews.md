@@ -138,6 +138,15 @@ Each review shows what it cost: dollars for Claude and OpenCode, AI Credits for 
 
 Set a **Monthly AI budget** near the bottom of Settings to be told, in the bell, when the month's spend passes it. Copilot's AI Credits aren't dollars, so they don't count towards it.
 
+**Limits**, at the top, shows how much of each allowance is used, where its maker says:
+
+- **Claude**, signed in with your Claude login: the current 5-hour session, the week (all models, and a model with a limit of its own), and extra usage this month, each with when it starts again. With an API key there are no plan limits: you pay as you go.
+- **Copilot**: this month's AI Credits, or premium requests.
+- **GitHub**: this hour's budget, for each of its two APIs. It's your account's, so other tools signed in to GitHub as you count too.
+- **Azure DevOps** says how much is used only once you're close to its limit, so most of the time there's nothing to show.
+
+Reading Claude's or Copilot's starts it for a moment, without a prompt: it costs nothing. OpenCode's providers don't report limits. The bell warns when one passes your level: see [Notifications](notifications.md).
+
 ## Export
 
 The download icon on the summary (or <kbd>Ctrl</kbd>+<kbd>K</kbd> → "Export this review to Markdown…") saves the review as a Markdown file: the PR, the agent, its verdict, summary and reading order, every finding with its comment and your questions about it, and the dismissed ones at the end.

@@ -14,9 +14,10 @@ You're told when:
 - someone else resolves a thread you commented in;
 - an automatic review has finished;
 - a review you started finishes, or fails, while its PR isn't on screen;
-- something happens on one of **your own PRs**: a reviewer votes, someone starts a comment thread, it gets merge conflicts, a required check fails, or it's completed or abandoned.
+- something happens on one of **your own PRs**: a reviewer votes, someone starts a comment thread, it gets merge conflicts, a required check fails, or it's completed or abandoned;
+- a **usage limit** passes your level (80% to begin with), and when it's used up: Claude's or Copilot's plan, or GitHub's or Azure DevOps' budget. Once each time it starts again. Click it for Usage and spend, which shows them all.
 
-Settings → Notifications has a switch for each of the first four, and **News about my own pull requests** for the last. Each also shows as a Windows notification while the app is running, including from the tray.
+Settings → Notifications has a switch for each of the first four, **News about my own pull requests**, and **A usage limit passes** with its level. Each also shows as a Windows notification while the app is running, including from the tray.
 
 Going to a PR yourself counts as seeing what it was about: its notifications are marked read in the bell, and their Windows notifications leave Windows' notification centre. A reply or a resolved thread counts once the PR's **Comments** tab is showing. A PR left open while you're in another app doesn't count until you come back to it.
 
