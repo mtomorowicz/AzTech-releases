@@ -124,7 +124,7 @@ The latest review of each repository is kept on this computer, and shows when yo
 
 ## Several reviews at once
 
-The pulse icon in the title bar (next to the bell) shows how many reviews are running. It opens the **reviews panel**: each review running now, with what it's doing and for how long, and a **Stop**, and the ones that finished, with their findings or why they failed. Click one to open its PR on that review.
+The pulse icon in the title bar (before the gauge and the bell) shows how many reviews are running. It opens the **reviews panel**: each review running now, with what it's doing and for how long, and a **Stop**, and the ones that finished, with their findings or why they failed. Click one to open its PR on that review.
 
 A review you started that finishes (or fails) while its PR isn't on screen is announced in the bell, and as a Windows notification.
 
@@ -134,7 +134,7 @@ Each review shows what it cost: dollars for Claude and OpenCode, AI Credits for 
 
 ### Usage and spend
 
-<kbd>Ctrl</kbd>+<kbd>K</kbd> → "Usage and spend" (or the link under **Monthly AI budget** in Settings) adds it up: today, the last 7 days, this month, or everything kept on this computer. It shows what was spent, how many reviews (and how many of them automatic) and questions, by agent and by repository. It also shows the follow-up questions by how long after the session's last call they came: within 5 minutes, a question re-reads the session cheaply from the provider's cache; later, it pays to read all of it again.
+The gauge in the title bar (or <kbd>Ctrl</kbd>+<kbd>K</kbd> → "Usage and spend", or the link under **Monthly AI budget** in Settings) opens **Usage and spend**. It adds up the spend: today, the last 7 days, this month, or everything kept on this computer. It shows what was spent, how many reviews (and how many of them automatic) and questions, by agent and by repository. It also shows the follow-up questions by how long after the session's last call they came: within 5 minutes, a question re-reads the session cheaply from the provider's cache; later, it pays to read all of it again.
 
 Set a **Monthly AI budget** near the bottom of Settings to be told, in the bell, when the month's spend passes it. Copilot's AI Credits aren't dollars, so they don't count towards it.
 
