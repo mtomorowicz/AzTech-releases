@@ -54,15 +54,16 @@ The list is kept in Settings on this computer, and the next session on the repos
 
 ![The Changes tab: what changed, file by file, with Commit and Push](images/fix-changes.png)
 
-The **Changes** tab shows what changed in your folder, file by file, and which changes are staged. <kbd>F</kbd> hides the list of files, and you can drag its edge to resize it. Point at a file for what you can do with it:
+The **Changes** tab shows what changed in your folder, file by file, and which changes are staged. Submodules aren't listed: the app leaves them alone. <kbd>F</kbd> hides the list of files, and you can drag its edge to resize it. Point at a file for what you can do with it:
 
+- **Stage** (+) puts the file's change in git's index, as `git add` does. **Commit…** then starts with it ticked.
 - **Unstage** takes a staged change out of git's index. The change stays.
 - **Discard…** undoes the file's changes, after you confirm: it goes back to its last commit, or, if it's new, it's deleted.
 - **Keep out of git** is for a file git doesn't know that you never want to commit, such as a local settings file. It's listed in the folder's `.git/info/exclude`, on this machine only, and stops showing as a change. The file stays.
 
 Then:
 
-- **Commit…**: pick the files. What the agent changed in this session is picked at first. Files that were already changed before the session started aren't, and say so: tick them if you want them in. A message is suggested, and you can change it.
+- **Commit…**: tick the files to commit: only those are committed, so one file on its own is fine. What the agent changed in this session, and what you staged in the window, is ticked at first. Files that were already changed before the session started aren't, and say so: tick them if you want them in. A message is suggested, and you can change it.
 - **Push…**: shows the commits and files that will be pushed, and pushes after you confirm, in the window and then in a second, smaller window that lists them again. It never force-pushes. When there's nothing to push yet, the tab says why under the buttons.
 
 Both wait while the agent is working. The agent is refused `git commit` and `git push`: you commit and push, with these buttons. **Commit…** runs your repository's git hooks. If a hook script your repository keeps (in `.husky`, say) has changes, the dialog lists it: look at it before you commit, or tick **Commit without running hooks**.
