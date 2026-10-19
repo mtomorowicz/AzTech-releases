@@ -140,12 +140,12 @@ Set a **Monthly AI budget** near the bottom of Settings to be told, in the bell,
 
 **Limits**, at the top, shows how much of each allowance is used, where its maker says:
 
-- **Claude**, signed in with your Claude login: the current 5-hour session, the week (all models, and a model with a limit of its own), and extra usage this month, each with when it starts again. With an API key there are no plan limits: you pay as you go.
+- **Claude**, with an API key, has no plan limits: you pay as you go, and what it spent is below.
 - **Copilot**: this month's AI Credits, or premium requests.
 - **GitHub**: this hour's budget, for each of its two APIs. It's your account's, so other tools signed in to GitHub as you count too.
 - **Azure DevOps** says how much is used only once you're close to its limit, so most of the time there's nothing to show.
 
-Reading Claude's or Copilot's starts it for a moment, without a prompt: it costs nothing. OpenCode's providers don't report limits. The bell warns when one passes your level: see [Notifications](notifications.md).
+Reading Copilot's starts it for a moment, without a prompt: it costs nothing. OpenCode's providers don't report limits. The bell warns when one passes your level: see [Notifications](notifications.md).
 
 ## Export
 

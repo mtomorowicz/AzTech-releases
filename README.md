@@ -2,7 +2,7 @@
 
 # AzTech PRador
 
-A dark-mode Windows app for reviewing pull requests on **Azure DevOps** and **GitHub**, with an AI reviewer at your side: **Claude**, **GitHub Copilot** or **OpenCode**.
+A Windows app for reviewing pull requests on **Azure DevOps** and **GitHub**, with an AI reviewer at your side: **Claude**, **GitHub Copilot** or **OpenCode**.
 
 ![The main window: the PR list, a PR's diff, and Claude's review](docs/images/main-window.png)
 

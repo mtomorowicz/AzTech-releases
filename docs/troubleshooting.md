@@ -39,6 +39,17 @@ The agent couldn't run git in the review's checkout, so it read the files withou
 **A question cost more than the last one**
 The agent's session wasn't cached any more, so it was read again in full. See [What a question costs](ask.md#what-a-question-costs).
 
+## Limits
+
+**"GitHub's limit for your account is used up until …"**
+GitHub allows each account so many requests an hour, and other tools signed in to GitHub as you use the same allowance. The app sends GitHub nothing more until then, and the list and the background checks pick up again on their own. **Usage and spend** → **Limits** shows how much of the hour is used.
+
+**"Azure DevOps asked the app to slow down"**
+Azure DevOps limits how much each person asks of it in a few minutes, and other tools signed in as you count too. The app waits as long as it says, usually a minute, then carries on.
+
+**A notification says a usage limit passed 80%**
+You asked to be told (Settings → Notifications → **A usage limit passes**). Click it for **Usage and spend**, which shows each limit and when it starts again.
+
 ## Notifications
 
 **No Windows notifications**

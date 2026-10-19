@@ -15,7 +15,7 @@ You're told when:
 - an automatic review has finished;
 - a review you started finishes, or fails, while its PR isn't on screen;
 - something happens on one of **your own PRs**: a reviewer votes, someone starts a comment thread, it gets merge conflicts, a required check fails, or it's completed or abandoned;
-- a **usage limit** passes your level (80% to begin with), and when it's used up: Claude's or Copilot's plan, or GitHub's or Azure DevOps' budget. Once each time it starts again. Click it for Usage and spend, which shows them all.
+- a **usage limit** passes your level (80% to begin with), and when it's used up: Copilot's monthly allowance, or GitHub's or Azure DevOps' budget. Once each time it starts again. Click it for Usage and spend, which shows them all.
 
 Settings → Notifications has a switch for each of the first four, **News about my own pull requests**, and **A usage limit passes** with its level. Each also shows as a Windows notification while the app is running, including from the tray.
 
