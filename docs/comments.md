@@ -57,7 +57,7 @@ Every comment and reply box takes Markdown:
 Going through a PR, you often want to write all your comments first and post them in one go. **Add to drafts**, in the comment box and in a thread's reply box, keeps a comment or reply for later instead of posting it. Nothing goes to Azure DevOps or GitHub yet.
 
 - Your drafts are at the top of the **Comments** tab, where you can edit or delete them. Click a draft's place to see its lines.
-- In the diff, a draft's line has an amber speech bubble.
+- In the diff, a draft's line has an amber speech bubble. Click it to see the draft in the **Comments** tab. To write another comment on that line, select it and press <kbd>C</kbd>.
 - The PR's header says how many you have: **2 drafts · Post…**.
 
 **Post…** (in the header or above your drafts) opens the Post dialog. It lists your drafts, ticked, above the review's kept comments, with the summary and the vote. One **Post** sends them all, and the dialog shows exactly what that is first. Posted drafts leave the list; one that fails stays, with why.
