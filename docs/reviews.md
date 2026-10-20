@@ -32,6 +32,8 @@ Pick a PR, open an agent's tab, and click **Start review** (or press <kbd>R</kbd
 - **Files**: a findings report, a spec or notes for the agent to read along with the code (see [Give the review your files](#give-the-review-your-files)).
 - **Your instructions for the repository**: guidance added to every review of it ("We use MediatR: flag DbContext used directly in controllers").
 
+Reviews also get your **review skills**: SKILL.md folders in the app's library, each for every review or for PRs that change files matching its patterns. See [Give reviews a skill](how-to/skills.md).
+
 **Save as default** keeps your choices for new reviews. Settings has the same defaults, and an optional **budget cap** per review for Claude.
 
 While the review runs, you see what the agent is doing: the files it reads and the commands it runs. **Cancel** (or <kbd>Esc</kbd>) stops it. Reviews keep running when you open other PRs.

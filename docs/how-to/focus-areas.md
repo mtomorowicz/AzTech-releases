@@ -31,3 +31,7 @@ Settings → **Export…** (next to **Saved replies…**) saves your focus areas
 ## The team's rules: guidelines in the repository
 
 If the repository has a `CLAUDE.md`, `AGENTS.md` or `.github/copilot-instructions.md`, every review reads it, from the PR's **target** branch. That's the place for rules the whole team shares.
+
+## Standing guidance: skills
+
+A longer checklist, or guidance that only matters when certain files change (migrations, a public API, a framework), fits a **skill** better than a focus area: a SKILL.md folder in the app's library, given to every review or only to PRs that change files matching its patterns. See [Give reviews a skill](skills.md).

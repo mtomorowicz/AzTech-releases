@@ -61,6 +61,7 @@ The app signs in through these tools. It stores no Azure DevOps password or toke
 - [Ask about some lines of the diff](docs/how-to/ask-about-lines.md)
 - [Fix your own PR](docs/how-to/fix-your-own-pr.md)
 - [Tell reviews what to look for](docs/how-to/focus-areas.md)
+- [Give reviews a skill](docs/how-to/skills.md)
 - [Get notified about new PRs in a repo](docs/how-to/watch-a-repo.md)
 - [Review GitHub pull requests](docs/how-to/use-github.md)
 

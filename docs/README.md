@@ -33,6 +33,7 @@ A Windows app for reviewing pull requests on **Azure DevOps** and **GitHub**, wi
 - [Ask about some lines of the diff](how-to/ask-about-lines.md)
 - [Fix your own PR](how-to/fix-your-own-pr.md)
 - [Tell reviews what to look for](how-to/focus-areas.md)
+- [Give reviews a skill](how-to/skills.md)
 - [Get notified about new PRs in a repo](how-to/watch-a-repo.md)
 - [Review GitHub pull requests](how-to/use-github.md)
 
