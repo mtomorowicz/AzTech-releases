@@ -30,7 +30,7 @@ Pick a PR, open an agent's tab, and click **Start review** (or press <kbd>R</kbd
 - **Focus**: areas to look at hardest, such as security, performance, tests or style. Pick any number. See [Tell reviews what to look for](how-to/focus-areas.md).
 - **Prompt**: anything specific for this review only ("Check the migration is reversible").
 - **Files**: a findings report, a spec or notes for the agent to read along with the code (see [Give the review your files](#give-the-review-your-files)).
-- **Skills**: the [review skills](how-to/skills.md) that apply to this PR, each in the review unless you turn it off here; **None this time** leaves them all out of this one review. The last chip opens the library.
+- **Skills**: the [review skills](how-to/skills.md) that apply to this PR (those the agent reads on request included), each in the review unless you turn it off here; **None this time** leaves them all out of this one review. The last chip opens the library.
 - **Your instructions for the repository**: guidance added to every review of it ("We use MediatR: flag DbContext used directly in controllers").
 
 **Save as default** keeps your choices for new reviews. Settings has the same defaults, and an optional **budget cap** per review for Claude.
