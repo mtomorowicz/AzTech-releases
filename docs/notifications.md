@@ -21,6 +21,8 @@ Settings → Notifications has a switch for each of the first four, **News about
 
 Going to a PR yourself counts as seeing what it was about: its notifications are marked read in the bell, and their Windows notifications leave Windows' notification centre. A reply or a resolved thread counts once the PR's **Comments** tab is showing. A PR left open while you're in another app doesn't count until you come back to it.
 
+Acting on a PR in the app counts too: a vote, a comment or a reply, completing or abandoning it (merging or closing, on GitHub). Its notifications are read from then, even once it's gone from the list. And you're not told about what you did yourself: completing or abandoning your own PR doesn't bring a notification that it was completed or abandoned.
+
 **Send test notification** in Settings checks they get through. If you don't see it, check Windows Settings → System → Notifications, and Do not disturb.
 
 Drafts: new drafts aren't announced unless you turn on **Include new drafts**. Otherwise you're told when a draft is published.
