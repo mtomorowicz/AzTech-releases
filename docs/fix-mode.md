@@ -17,11 +17,12 @@ For your own PRs: an agent fixes what the review found, or what a reviewer asked
    - **Full**: every command runs without asking. The first time you pick it, the window explains what it means and asks you to confirm; **Keep asking** leaves the mode as it was.
 
    You can switch between the three at any time in the session, in the window's title bar. Switching to Full lets the commands waiting for you run; switching to Controlled, the waiting ones on the list.
-4. **Start fixing**.
+4. **Skills**: the [review skills](how-to/skills.md#in-fix-mode) from your library that apply to the PR go to the agent too. Click one off, or **None this time**, to leave it out of this session; **Choose…** picks among many one by one.
+5. **Start fixing**.
 
 ## Tell it what to fix
 
-Write in the box at the bottom, like a chat: "fix the findings", "do what Tom asked in the comments", "the off-by-one in retry.ts". The agent knows the PR, the reviews' findings still to fix and the open comment threads.
+Write in the box at the bottom, like a chat: "fix the findings", "do what Tom asked in the comments", "the off-by-one in retry.ts". The agent knows the PR, the reviews' findings still to fix, the open comment threads, and your skills: the ones in its instructions, and the ones it can read when it needs one (the transcript says which, and **Read skill …** when it reads one; the title bar counts them).
 
 When the agent says it fixed findings, they're marked **Fixed** in their review, and the session says which. You can take a mark back on the finding in the main window. A re-review after you push checks them.
 
