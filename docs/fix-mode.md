@@ -17,7 +17,7 @@ For your own PRs: an agent fixes what the review found, or what a reviewer asked
    - **Full**: every command runs without asking. The first time you pick it, the window explains what it means and asks you to confirm; **Keep asking** leaves the mode as it was.
 
    You can switch between the three at any time in the session, in the window's title bar. Switching to Full lets the commands waiting for you run; switching to Controlled, the waiting ones on the list.
-4. **Skills**: the [review skills](how-to/skills.md#in-fix-mode) from your library that apply to the PR go to the agent too. Click one off, or **None this time**, to leave it out of this session; **Choose…** picks among many one by one.
+4. **Skills**: the [skills](how-to/skills.md#in-fix-mode) from your library that apply to the PR go to the agent too, each as its **When fix sessions get it** setting says. Click one off, or **None this time**, to leave it out of this session; **Choose…** picks among many one by one.
 5. **Start fixing**.
 
 ## Tell it what to fix
