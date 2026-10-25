@@ -38,7 +38,9 @@ Others are warnings: the skill goes in **held back**, and no review or fix sessi
 
 A skill held back has a shield in the library's list and says **held back: warnings to accept**. Its pane lists each warning with the line it's about: read them, and the skill's text further down, then **Accept the warnings**; **Hold it back again** takes that back. Tick several to accept theirs together, after a confirmation saying how many. A skill read again keeps the warnings you accepted, and a new one holds it back again, marked **new**; one refused when read again keeps the copy you had. What a review or a fix session gets is what was checked: if a skill's copy in the library changes afterwards, the session goes without it until you read it again. Skills already in your library are checked once, the first time the app reads it. A review's log, and a fix session's transcript, say which skills were held back or refused.
 
-The check catches what such text usually looks like, and a skill can be written to slip past it: read a skill before you give it to an agent.
+For a closer read, **Check with Claude** (or Copilot, or OpenCode: the same choice as for **Assess**) in a skill's security box, or on all the ticked ones, has the agent read the skill and every file it comes with, in the library's folder, for the same things however they're worded. What it finds is listed with the app's own findings, marked with the agent's name, and counts the same way: a warning holds the skill back until you accept it, something worse refuses it. It adds to the app's check and never takes from it, so a skill the app refused stays refused whatever the agent says. **Check again** replaces its earlier answer, and a skill read again with changed files goes without it. What the agent spends counts in Usage and spend.
+
+The checks catch what such text usually looks like, and a skill can be written to slip past them: read a skill before you give it to an agent.
 
 ## When a review, or a fix, gets it
 
