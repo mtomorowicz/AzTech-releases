@@ -96,7 +96,7 @@ To ask the agent about a finding before you decide, see [Asking the agent](ask.m
 
 ![The confirmation before posting: each comment, a summary and a vote](images/post-dialog.png)
 
-Nothing is posted until you click **Post**. Comments you've posted are marked as posted, so they're never posted twice.
+Nothing is posted until you click **Post**. Comments you've posted are marked as posted, so they're never posted twice. A posted finding's **Delete** (or deleting its comment in the Comments panel) removes the comment from the PR and puts the finding back as kept, with your edits, so you can post it again.
 
 ### Suggested changes
 

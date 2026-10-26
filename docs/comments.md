@@ -12,7 +12,7 @@ From here you can:
 - **resolve** it, or reactivate it (on Azure DevOps there are other statuses too, such as won't fix);
 - **reply and resolve** in one go: write the reply, then **Reply and resolve** ("Fixed in the latest push");
 - **like** a comment (👍 beside it), or take your like back: the 👍 shows how many liked it, and hovering it shows who (on GitHub it's the 👍 reaction);
-- **edit** your own comments;
+- **edit** or **delete** your own comments. Deleting removes the comment for everyone on the PR and can't be undone; replies to it stay;
 - write a **new comment** on the PR.
 
 Each of these shows a confirmation with exactly what will change before anything is posted. Or keep your comments and replies in your drafts and post them together: see [Drafts](#drafts).
