@@ -90,6 +90,7 @@ The header has the PR's title, branches, author and reviewers with their votes, 
 
 - Click the **source branch** to copy its name.
 - Click a **build** to see its pipeline run: where it stopped, its first errors, and a link to it.
+- More than eight checks (a GitHub PR with dozens of workflows, say) fold behind one chip that counts them: how many failed, are running or waiting, with their names in its tooltip. Click it to see them all; **Fewer** folds them again. The choice is remembered.
 - **Approve** votes on the PR. The menu next to it has the other votes: approve with suggestions, wait for author, reject, or reset your vote (on GitHub: request changes). Every vote shows a confirmation first.
 - The **layout** buttons switch between **Diff**, **Split** and **Review** (<kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>): the diff alone, the diff and the panel side by side, or the panel alone. In **Split**, drag the panel's left edge to make it wider or narrower (double-click it for the default width).
 - **Open in ADO** (or **Open in GitHub**) opens the PR in your browser.
