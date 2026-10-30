@@ -51,7 +51,7 @@ A long list (a big GitHub organization's, say) shows its newest PRs first, with 
 
 The list is re-read every minute. You can change that with **Auto-refresh PR list** near the bottom of Settings, or turn it off (0). Builds come with it every few minutes, and more often while one is queued or running.
 
-When the PR you have open changes, it updates in place: title, description, votes, builds and comments. New commits bring the diff along, with the same file open at the same place. If you're typing a comment in the diff, the new commits wait: the header says **New commits · Show them**.
+When the PR you have open changes, it updates in place: title, description, votes, builds and comments. New commits bring the diff along, with the same file open at the same place. If you're typing a comment in the diff, the new commits wait: the header says **New commits · Show them**. When it leaves the list because it was completed or abandoned (auto-complete went through, say, or someone else merged it), it stays on screen, and its header says what became of it.
 
 The app also catches up when your machine wakes, when the network comes back, and when you come back to the window. <kbd>F5</kbd> refreshes now.
 
@@ -86,7 +86,7 @@ The app uses your GitHub CLI sign-in (`gh auth login`). For GitHub Enterprise, s
 
 ### The header
 
-The header has the PR's title, branches, author and reviewers with their votes, and its builds.
+The header has the PR's title, branches, author and reviewers with their votes, and its builds. Once the PR is completed or abandoned, by you or by anyone else, a **Completed** or **Abandoned** badge (**Merged** or **Closed** on GitHub) says so beside its number, with when in its tooltip, and the buttons that no longer apply (the vote, **Complete…**, **Fix…**) go; the diff and the comments stay readable.
 
 - Click the **source branch** to copy its name.
 - Click a **build** to see its pipeline run: where it stopped, its first errors, and a link to it.
