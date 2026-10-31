@@ -17,7 +17,7 @@ In a PR's own window (popped out), <kbd>Ctrl</kbd>+<kbd>K</kbd> and <kbd>Ctrl</k
 | Keys | Does |
 |---|---|
 | <kbd>R</kbd> | Start a review |
-| <kbd>Esc</kbd> | Stop the running review (or stop editing a finding) |
+| <kbd>Esc</kbd> | Closes what's open. Anything typed and not yet sent or saved (a comment, a reply, a question, an edit, a message) is asked about first; while a review runs, asks whether to stop it (the **Cancel** button stops it at once) |
 | <kbd>J</kbd> / <kbd>K</kbd> | Next / previous finding |
 | <kbd>A</kbd> / <kbd>E</kbd> / <kbd>D</kbd> | Keep / edit / dismiss the finding |
 | <kbd>O</kbd> | Roll the finding up to one line, or open it (<kbd>Shift</kbd>+<kbd>O</kbd>: all of them) |

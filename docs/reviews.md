@@ -35,7 +35,7 @@ Pick a PR, open an agent's tab, and click **Start review** (or press <kbd>R</kbd
 
 **Save as default** keeps your choices for new reviews. Settings has the same defaults, and an optional **budget cap** per review for Claude.
 
-While the review runs, you see what the agent is doing: the files it reads and the commands it runs. **Cancel** (or <kbd>Esc</kbd>) stops it. Reviews keep running when you open other PRs.
+While the review runs, you see what the agent is doing: the files it reads and the commands it runs. **Cancel** stops it at once; <kbd>Esc</kbd> asks first, so a stray key never stops a review. Either stops it. Reviews keep running when you open other PRs.
 
 The first review of a repository clones it, and the clone is kept, so later reviews start faster. (Each agent also downloads its runtime once: see [Getting started](getting-started.md#set-up-an-agent).)
 
