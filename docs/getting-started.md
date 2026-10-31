@@ -37,7 +37,7 @@ With both set up, the title bar switches between Azure DevOps and GitHub, and yo
 
 ## Set up an agent
 
-Open **Settings** (the gear in the title bar). Each agent has its own section.
+Open **Settings** (the gear in the title bar). Its side nav has **General**, **Skills**, **Focus areas**, **Saved replies**, **Usage and spend** and **About** (this build, the release notes, the guides, updates); under **General** it lists General's parts, and a click scrolls to one. On **General**, each agent has its own section, and **Save changes** and **Cancel** are in its header.
 
 - **Claude**: choose **API key**, paste your Anthropic key and click **Save key**. It's encrypted on your machine.
 - **GitHub Copilot**: choose **GitHub sign-in** (your Copilot CLI or GitHub CLI login, enterprise accounts included) or **GitHub token** (paste a fine-grained token with the Copilot Requests permission and click **Save token**), then **Check Copilot**. It lists the models your plan offers.

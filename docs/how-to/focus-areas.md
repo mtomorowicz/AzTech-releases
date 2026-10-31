@@ -10,7 +10,7 @@ On a review's start screen, above **Start review** (or in the options of its **U
 
 **Focus** picks areas such as security, performance, tests or style. Pick any number. **Save as default** makes them your **preferred focus**, used for new reviews and automatic ones. Settings has it too.
 
-The pencil next to the focus chips (or <kbd>Ctrl</kbd>+<kbd>K</kbd> → "Review focus areas…") shows what each area tells the agent. You can:
+The pencil next to the focus chips (or Settings → **Focus areas**, or <kbd>Ctrl</kbd>+<kbd>K</kbd> → "Review focus areas…") opens **Focus areas** in Settings, which shows what each area tells the agent. Leaving it with unsaved changes asks first. You can:
 
 - edit the built-in ones: their name, short description and instructions;
 - hide the ones you don't use, or reset them;
