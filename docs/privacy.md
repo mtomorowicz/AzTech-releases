@@ -36,6 +36,6 @@ The app cleans up on its own:
 - the saved reviews of a closed PR go once they're 90 days old;
 - the files you've attached to a PR go 90 days after one was last added or a review last read them.
 
-**Local repo cache**, near the bottom of Settings, shows how much space the clones and checkouts take. **Clear everything** deletes them all now; they come back on the next review.
+**Local repo cache**, in Settings → **General**, under **Refresh and budget**, shows how much space the clones and checkouts take. **Clear everything** deletes them all now; they come back on the next review.
 
 Uninstalling the app (Windows Settings → Apps) removes the app. To remove its data as well, delete the two `AzTech` folders above.

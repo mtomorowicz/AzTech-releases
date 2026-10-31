@@ -49,7 +49,7 @@ A PR's **labels** (Azure DevOps calls them tags) show on its row, the first thre
 
 A long list (a big GitHub organization's, say) shows its newest PRs first, with **Loading more PRs…** under them while the rest come; builds appear on the rows as they're read.
 
-The list is re-read every minute. You can change that with **Auto-refresh PR list** near the bottom of Settings, or turn it off (0). Builds come with it every few minutes, and more often while one is queued or running.
+The list is re-read every minute. You can change that with **Auto-refresh PR list** in Settings → **General**, under **Refresh and budget**, or turn it off (0). Builds come with it every few minutes, and more often while one is queued or running.
 
 When the PR you have open changes, it updates in place: title, description, votes, builds and comments. New commits bring the diff along, with the same file open at the same place. If you're typing a comment in the diff, the new commits wait: the header says **New commits · Show them**. When it leaves the list because it was completed or abandoned (auto-complete went through, say, or someone else merged it), it stays on screen, and its header says what became of it.
 

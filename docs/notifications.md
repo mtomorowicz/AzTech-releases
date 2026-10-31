@@ -8,7 +8,7 @@ The bell in the title bar lists what happened while you were busy. Click one to 
 
 You're told when:
 
-- you're added as a reviewer on a PR, in any repository;
+- you're added as a reviewer on a PR, in any repository (not when your own vote put you among its reviewers);
 - a PR is opened in a repository you **watch**;
 - someone replies in a thread you commented in;
 - someone else resolves a thread you commented in;
@@ -53,6 +53,6 @@ Turn on **A summary of my day** in Settings → Notifications and pick the hour 
 
 ## The tray
 
-When you close the window, the app keeps running in the system tray, so notifications keep coming. The tray icon gets a dot when some are unread; hover over it for how many. To quit, right-click the tray icon → **Quit AzTech PRador**. To quit when you close the window instead, turn off **Keep AzTech PRador running in the system tray when the window is closed**, near the bottom of Settings.
+When you close the window, the app keeps running in the system tray, so notifications keep coming. The tray icon gets a dot when some are unread; hover over it for how many. To quit, right-click the tray icon → **Quit AzTech PRador**. To quit when you close the window instead, turn off **Keep AzTech PRador running in the system tray when the window is closed**, in Settings → **General**, under **Refresh and budget**.
 
 **Start AzTech PRador in the tray when Windows starts**, next to it, starts it when you sign in to Windows, so you're told about PRs from the start of the day.

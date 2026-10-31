@@ -55,7 +55,7 @@ You asked to be told (Settings → Notifications → **A usage limit passes**). 
 **No Windows notifications**
 - Check Settings → Notifications: each kind has its own switch.
 - **Send test notification** there. If it doesn't show, check Windows Settings → System → Notifications (is AzTech PRador allowed?) and Do not disturb.
-- The app needs to be running: in the tray counts. Turn on **Keep AzTech PRador running in the system tray when the window is closed**, near the bottom of Settings.
+- The app needs to be running: in the tray counts. Turn on **Keep AzTech PRador running in the system tray when the window is closed**, in Settings → **General**, under **Refresh and budget**.
 
 If the background checks are failing, Settings → Notifications says so, with **Open log**.
 
@@ -84,7 +84,7 @@ OpenCode would run the plugins in that folder outside fix mode's checks, so it c
 
 ## Disk space
 
-The clones and PR checkouts are kept for the next review. **Local repo cache**, near the bottom of Settings, shows how much space they take: **Clean up now** removes the ones no longer needed, and **Clear everything** removes them all (they come back on the next review).
+The clones and PR checkouts are kept for the next review. **Local repo cache**, in Settings → **General**, under **Refresh and budget**, shows how much space they take: **Clean up now** removes the ones no longer needed, and **Clear everything** removes them all (they come back on the next review).
 
 ## Still stuck
 

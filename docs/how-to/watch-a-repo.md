@@ -17,4 +17,4 @@ Click the bell in the repository menu again, or the **×** next to the repositor
 
 Watched repositories are remembered per project: switching projects keeps them for when you come back.
 
-To keep notifications coming with the window closed, leave **Keep AzTech PRador running in the system tray when the window is closed** on, near the bottom of Settings. See [Notifications](../notifications.md).
+To keep notifications coming with the window closed, leave **Keep AzTech PRador running in the system tray when the window is closed** on, in Settings → **General**, under **Refresh and budget**. See [Notifications](../notifications.md).
