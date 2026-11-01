@@ -30,7 +30,7 @@ Settings → **Export…** (next to **Saved replies…**) saves your focus areas
 
 ## The team's rules: guidelines in the repository
 
-If the repository has a `CLAUDE.md`, `AGENTS.md` or `.github/copilot-instructions.md`, every review reads it, from the PR's **target** branch. That's the place for rules the whole team shares.
+If the repository has a `CLAUDE.md`, `AGENTS.md` or `.github/copilot-instructions.md`, every review reads it, from the PR's **target** branch, along with what those import (`@path`) and the path-scoped instructions (`.github/instructions/*.instructions.md` by their `applyTo`, `.claude/rules/*.md` by their `paths`) that match the files the PR changes. That's the place for rules the whole team shares.
 
 ## Standing guidance: skills
 

@@ -14,7 +14,7 @@ Only read. The agent works in a checkout of the PR of its own, kept apart from y
 
 The PR's checkout is made without your own git settings, so nothing in the PR runs on your machine through them. A file the repository keeps in Git LFS is LFS's small pointer file there: the agent sees that the file changed, not what's in it.
 
-The agent is told to treat the PR's description, comments and code as data, never as instructions. Your repository's guidelines (`CLAUDE.md`, `AGENTS.md`, `.github/copilot-instructions.md`) are read from the **target** branch, so a PR can't change what the review is told.
+The agent is told to treat the PR's description, comments and code as data, never as instructions. Your repository's guidelines (`CLAUDE.md`, `AGENTS.md`, `.github/copilot-instructions.md`, what they import with `@path`, and the path-scoped `.github/instructions/*.instructions.md` and `.claude/rules/*.md` whose patterns match the changed files) are read from the **target** branch, so a PR can't change what the review is told. The review card shows how many went in, and names them on hover; the log says why each.
 
 ## What the PR is meant to do
 
