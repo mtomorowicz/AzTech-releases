@@ -90,7 +90,7 @@ A review's log says which skills it got (**Skills: …**), which the agent could
 
 ## Profiles
 
-A **profile** is a named set of skills a review (or a fix session) is narrowed to: only the skills in it may go, and each still goes the way its own setting says (every review, when files match, when the agent asks). Make them on the **Profiles** tab of Settings → Skills: a name, what it's offered for (reviews, fix sessions or both), and the skills ticked from the library, with a filter box and **Tick all shown** for a long one.
+A **profile** is a named set of skills a review (or a fix session) is narrowed to: only the skills in it may go, and each still goes the way its own setting says (every review, when files match, when the agent asks). Make them on the **Profiles** tab of Settings → Skills: a name, what it's offered for (reviews, fix sessions or both), and the skills ticked from the library. The list folds per source (a plugin, a folder), each with a box for the lot and **Collapse all** for a library of many; a filter box and **Tick all shown** narrow it; **Details** on a skill shows what the library knows of it: what it reads as, what the scan and an agent suggest, its patterns, and whether the security check holds it back. The name, what it's for and **Save** stay at the top while the list scrolls.
 
 ![Settings → Skills → Profiles: a profile, and the skills in it](../images/skill-profiles.png)
 
