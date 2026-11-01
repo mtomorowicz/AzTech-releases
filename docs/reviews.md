@@ -79,6 +79,10 @@ The chips above the findings count them by severity. Click one to see only those
 
 Some findings aren't wrong, just not how your team works. After you dismiss one, the message that says so offers **Don't flag this in** *repository*. It drafts a line for your instructions for that repository; change it as you like and click **Add to my instructions**. Every agent's reviews of that repository follow your instructions from then on. You'll find them, to change or remove, in the review options (**Your instructions for the repository**). Dismissed findings have the same button.
 
+## Earlier reviews
+
+The app keeps the newest five reviews of a PR by each agent. The tab shows the latest; **Earlier** beside the tabs (with how many there are) opens the rest, each as it was: when, model, profile, what it was told, its summary, your prompt and its findings, read-only, with what became of each (posted, kept, dismissed, fixed). **Export** saves any of them as Markdown. **Compare with the latest** sets an earlier review against the one on the tab, by place: the places both found, those only the earlier one did, those only the latest did. That's the way to see what a change of profile, prompt or code did to the findings. **Remove** deletes a kept review for good, after asking; what was posted on the PR stays, and when it was the one on the tab, the tab shows the next newest.
+
 ## Compare the agents' reviews
 
 When two or more agents have reviewed the PR, the panel has a **Compare** tab. It lists their open findings by place: the file and lines, with the findings of every agent that flagged it. Places more than one agent flagged come first, marked with how many agree: that's usually where to look first. **Only where they agree** hides the rest. Click a finding to open it in its agent's tab, where you keep, edit or dismiss it; click the place to go there in the diff.
