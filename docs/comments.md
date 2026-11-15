@@ -19,6 +19,24 @@ Each of these shows a confirmation with exactly what will change before anything
 
 **Ask AI** on a thread asks an agent about it. See [Asking the agent](ask.md#about-a-comment-thread).
 
+## Answer your reviewers
+
+On **your own PR**, the threads your reviewers left open can be answered together. The **Comments** tab says how many there are (**3 open threads from your reviewers · Answer them…**). **Answer your reviewers…** in the menu next to **Complete…**, and <kbd>Ctrl</kbd>+<kbd>K</kbd> ("Answer your reviewers on this PR…"), open the same dialog.
+
+1. Pick the agent and, if you like, tell it something it should know ("we keep the old API until v3"), then **Read the threads**. It reads every open thread someone else started (yours and resolved ones are left out), with the code at the PR's head and the PR's commits. It only reads.
+2. For each thread it proposes what to do, with a line on what it found:
+   - **Fix it**: the reviewer is right, and the code should change;
+   - **Reply**: a question to answer, or something to explain, with the answer drafted;
+   - **Push back**: the code is right as it is, with a polite reason drafted;
+   - **Already done**: a commit on the PR does it already (it names the commit), with a short reply drafted.
+3. Change anything: the action, the reply (in your words), or untick a thread to leave it out.
+4. Then, for the threads ticked:
+   - **Add N replies to drafts** puts the replies (for **Reply**, **Push back**, and a **Fix it** you wrote a reply for) in your [drafts](#drafts), marked with the agent's name. You post them from **Post…**, under its one confirmation.
+   - **Reply and resolve N…** posts the reply to each **Already done** thread and resolves it, after a confirmation that lists them, each with its reply.
+   - **Send N to fix mode** opens [fix mode](fix-mode.md) with those threads in its message box: each thread's place, the reviewer's words and what to do. Start fixing, read it, and send it.
+
+Each thread shows what's been done with it already (**In your drafts**, **Replied and resolved**, **Sent to fix mode**), so nothing goes twice. Reading the threads posts nothing; it costs what a question to the agent costs, and counts in **Usage and spend**. The reviewers' words go to the agent as data: they can shape a drafted reply, which you read before it goes anywhere, but not what the agent does.
+
 ## Threads in the diff
 
 Threads also show in the diff, under their lines, the way Azure DevOps shows them. You can reply, resolve and edit there too. The **Comments** toggle above the diff hides them.

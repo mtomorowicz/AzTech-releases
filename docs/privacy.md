@@ -7,7 +7,7 @@ Everything the app keeps is on your computer:
 - settings, reviews, your questions, notifications, the files you've marked viewed, your notes, the files you've attached to PRs for their reviews and the people you've mentioned from outside a PR in `%APPDATA%\AzTech`;
 - the clones and PR checkouts that reviews read, and the agents' runtimes, in `%LOCALAPPDATA%\AzTech`.
 
-Your Anthropic API key and GitHub token are encrypted with Windows' own data protection for your user account. The app keeps no password or token for Azure DevOps: it asks the Azure CLI for a short-lived token, and holds it in memory only until it expires.
+Your Anthropic API key, your GitHub token and the tokens of the [coding agents](coding-agents.md) you let in are encrypted with Windows' own data protection for your user account. The app keeps no password or token for Azure DevOps: it asks the Azure CLI for a short-lived token, and holds it in memory only until it expires.
 
 The agents' own tools keep their session history the way they normally do, in your user folder: Claude Code's and Copilot's, and OpenCode's history. That history holds what the agent read. The app deletes Copilot's and OpenCode's sessions of reviews it no longer keeps; Claude Code clears its own after 30 days.
 
@@ -18,6 +18,7 @@ The app has no account and no server of its own, and sends no analytics. The age
 - **Azure DevOps or GitHub**: to read the PRs, their comments and builds, and to clone the repositories. Writes (comments, replies, votes) happen only after you confirm each one.
 - **The model provider you picked** (Anthropic for Claude, GitHub for Copilot, the provider you connected in OpenCode): the agent's prompt and what it reads from the PR's checkout to answer it, the files you've attached to the PR included. That's how a review works: the code it reviews goes to the model. Use a provider your organization allows for its code.
 - **OpenCode Zen**, only if you turn on **Offer OpenCode Zen's free models** in Settings → OpenCode (it's off): those models work without signing in, but most may keep what they're sent to train on, so a review would share the PR's code. Leave it off for work code.
+- **Your own coding agent's AI provider**, only if you turn on [Coding agents](coding-agents.md) and connect one: what your agent reads from AzTech (pull request text, comments, findings) goes to it, as anything you paste into it would. Nothing reaches your agent unless it asks, with a token you gave it.
 - **The package registry**, once per agent: the agent's runtime is downloaded the first time it's needed, and checked against the exact version the app expects.
 - **The releases page on GitHub**: to check for updates and download them.
 

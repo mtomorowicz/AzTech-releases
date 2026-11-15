@@ -23,6 +23,7 @@ A Windows app for reviewing pull requests on **Azure DevOps** and **GitHub**, wi
 - [Asking the agent](ask.md): questions about a finding, the PR, a thread or some lines.
 - [Comments](comments.md): threads, replies, and commenting on code.
 - [Fix mode](fix-mode.md): an agent fixing your own PR in your checkout.
+- [Coding agents](coding-agents.md): your own Claude Code, Copilot (in a terminal, VS Code, a JetBrains IDE or Visual Studio) or OpenCode reading your PRs and their reviews.
 - [Notifications](notifications.md): the bell, Windows notifications, watched repos, the tray.
 - [Keyboard](keyboard.md): shortcuts and the command palette.
 - [Updates](updates.md): how the app updates itself, and what's new.
