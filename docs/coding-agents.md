@@ -26,14 +26,14 @@ It's off until you turn it on, and your agent writes nothing to Azure DevOps or 
 
 | Tool | What it does |
 |---|---|
-| `list_pull_requests` | Your queue: the PRs that need you, the ones you created, or all active ones, each with its address and how its AzTech reviews stand |
-| `find_pull_request` | The pull request for the branch you're on, from the repository's remote URL |
+| `list_pull_requests` | Your queue: the PRs that need you, the ones you created, or all active ones, each with its address and how its AzTech reviews stand. From the Azure DevOps project and the GitHub organization the app is set to, both, whichever one it's showing; it says which it read |
+| `find_pull_request` | The pull request for the branch you're on, from the repository's remote URL: any repository of your Azure DevOps organization or on your GitHub, not only the project the app shows |
 | `get_pull_request` | A pull request: votes, checks (a failed build with its first errors), work items, the files it changes, its description |
-| `get_comment_threads` | Its comment threads, open ones or all, with every comment |
-| `get_review_findings` | The latest AzTech review by each agent: its summary and the findings still open, with their lines and suggested fixes |
+| `get_comment_threads` | Its comment threads, open ones or all, with every comment. On GitHub also what reviewers wrote with their reviews, and the conversation's comments, which GitHub doesn't mark open or resolved |
+| `get_review_findings` | The latest finished AzTech review by each agent: its summary and the findings still open, with their lines and suggested fixes. It says when a newer review is running or failed, and when the pull request has been pushed to since |
 | `add_draft_comment` | A comment in **your drafts**: on lines of a changed file, on the whole pull request, or a reply to a thread |
 | `mark_finding_fixed` | Marks a finding fixed in AzTech |
-| `start_review` | Starts an AzTech review, only if you allowed that client to |
+| `start_review` | Starts an AzTech review of what's pushed, only if you allowed that client to |
 
 Things to try:
 
@@ -44,8 +44,9 @@ Things to try:
 
 ## What stays yours
 
+- **A pull request by its address is that one.** Your agent names a pull request by its web address, and the app looks it up where the address says, in any project of your organization: never a repository of the same name in the project on screen. A draft on a pull request that isn't there is refused.
 - **Nothing is posted.** A comment your agent drafts waits in your drafts (the Comments panel, and the header's **N drafts · Post…**), marked **from Claude Code** or whichever client wrote it. You read it, change or delete it, and post it from **Post…**, with its confirmation, as any draft. The bell says when an agent added some.
-- **Reviews only if you say so.** Tick **May start reviews** on a client to let it start one. A review it starts is like any other: read-only, it posts nothing, and it costs what any review costs (it counts in **Usage and spend** and towards your budget). Its log says which client started it.
+- **Reviews only if you say so.** Tick **May start reviews** on a client to let it start one. A review it starts is like any other: read-only, it posts nothing, with the repository's skill profile if it has one, and it costs what any review costs (it counts in **Usage and spend** and towards your budget). Its log says which client started it. Coding agents can start 20 reviews a day between them, and have 3 running at once; one asked to review what's new when nothing is starts nothing.
 - **Marked fixed** says by whom ("Marked fixed by Claude Code"), and a re-review after you push still has the last word.
 - **Recent calls** lists what each client did this session.
 - **New token** gives a client a new token; the old one stops working at once. A client the app added to its agent gets the new token there too; otherwise connect it again. **Remove** (the bin) stops the token for good, and takes the `aztech` server out of an agent the app added it to.
@@ -56,7 +57,7 @@ Things to try:
 
 - **Only this computer.** The endpoint listens on this computer's own loopback address only, so nothing on the network can reach it; it refuses requests from web pages, and answers only a token you gave out. It's there while AzTech PRador runs, in the tray too.
 - **What your agent reads goes to its own AI provider**, as if you'd pasted it into it: pull request text, comments and findings. Use an agent your organization allows for its code.
-- **Text written by others** (descriptions, comments, build output) is marked as such, so your agent treats it as data rather than instructions.
+- **Text written by others** (titles, branch names, descriptions, comments, file names, build output) is marked as such, so your agent treats it as data rather than instructions. So are a review's findings: an AI wrote them after reading the pull request.
 - **The token is in your agent's settings.** Treat it like a password: if it's been seen, give the client a new token.
 
 ## If it doesn't connect
