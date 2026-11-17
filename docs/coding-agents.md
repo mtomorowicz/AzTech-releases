@@ -29,11 +29,13 @@ It's off until you turn it on, and your agent writes nothing to Azure DevOps or 
 | `list_pull_requests` | Your queue: the PRs that need you, the ones you created, or all active ones, each with its address and how its AzTech reviews stand. From the Azure DevOps project and the GitHub organization the app is set to, both, whichever one it's showing; it says which it read |
 | `find_pull_request` | The pull request for the branch you're on, from the repository's remote URL: any repository of your Azure DevOps organization or on your GitHub, not only the project the app shows |
 | `get_pull_request` | A pull request: votes, checks (a failed build with its first errors), work items, the files it changes, its description |
-| `get_comment_threads` | Its comment threads, open ones or all, with every comment. On GitHub also what reviewers wrote with their reviews, and the conversation's comments, which GitHub doesn't mark open or resolved |
+| `get_comment_threads` | Its comment threads, open ones or all, with every comment. On GitHub also what reviewers wrote with their reviews, and the conversation's comments, which GitHub doesn't mark open or resolved. Comments only automation bots wrote (test results, coverage) are left out, as in the **Comments** tab, unless your agent asks for them; the answer says how many |
 | `get_review_findings` | The latest finished AzTech review by each agent: its summary and the findings still open, with their lines and suggested fixes. It says when a newer review is running or failed, and when the pull request has been pushed to since |
 | `add_draft_comment` | A comment in **your drafts**: on lines of a changed file, on the whole pull request, or a reply to a thread |
 | `mark_finding_fixed` | Marks a finding fixed in AzTech |
 | `start_review` | Starts an AzTech review of what's pushed, only if you allowed that client to |
+
+A long list of threads or findings reaches your agent in parts: each answer says how many it has and how to ask for the rest, so a busy pull request is never too much for it to take.
 
 Things to try:
 
@@ -46,10 +48,10 @@ Things to try:
 
 - **A pull request by its address is that one.** Your agent names a pull request by its web address, and the app looks it up where the address says, in any project of your organization: never a repository of the same name in the project on screen. A draft on a pull request that isn't there is refused.
 - **Nothing is posted.** A comment your agent drafts waits in your drafts (the Comments panel, and the header's **N drafts · Post…**), marked **from Claude Code** or whichever client wrote it. You read it, change or delete it, and post it from **Post…**, with its confirmation, as any draft. The bell says when an agent added some.
-- **Reviews only if you say so.** Tick **May start reviews** on a client to let it start one. A review it starts is like any other: read-only, it posts nothing, with the repository's skill profile if it has one, and it costs what any review costs (it counts in **Usage and spend** and towards your budget). Its log says which client started it. Coding agents can start 20 reviews a day between them, and have 3 running at once; one asked to review what's new when nothing is starts nothing.
+- **Reviews only if you say so.** Tick **May start reviews** on a client to let it start one. A review it starts is like any other: read-only, it posts nothing, with the repository's skill profile if it has one, and it costs what any review costs (it counts in **Usage and spend** and towards your budget). Its log says which client started it. Coding agents can start 20 reviews a day between them, and have 3 running at once, however many your agent asks for in one go; closing the app doesn't start the day's count again. One asked to review what's new when nothing is starts nothing.
 - **Marked fixed** says by whom ("Marked fixed by Claude Code"), and a re-review after you push still has the last word.
 - **Recent calls** lists what each client did this session.
-- **New token** gives a client a new token; the old one stops working at once. A client the app added to its agent gets the new token there too; otherwise connect it again. **Remove** (the bin) stops the token for good, and takes the `aztech` server out of an agent the app added it to.
+- **New token** gives a client a new token; the old one stops working at once. A client the app added to its agent gets the new token there too; otherwise connect it again. **Remove** (the bin) stops the token for good, and takes the `aztech-prador` server out of an agent the app added it to.
 - **Remove from …** (under **Connect…**) takes the server out of the agent and keeps the client. In a Copilot's list only the `aztech-prador` server goes; the rest stays.
 - Untick the switch and nothing listens any more.
 
@@ -63,7 +65,7 @@ Things to try:
 ## If it doesn't connect
 
 - **AzTech PRador must be running.** In the tray counts.
-- **"Port … is in use by another program"**: type another port, click **Use port …**, then connect your clients again (their address changed).
+- **"Port … is in use by another program"**: type another port and click **Use port …**. An agent the app added (it says **Set up**) is given the new address: start it again. Connect any other again, with the settings **Connect…** shows.
 - **Your agent says the token is unknown**: it was replaced or the client removed. **Add to …** again, or run the new command.
 - **The Add to … button is greyed out**: for Claude Code, its command isn't on this computer (or not on its PATH): run the command shown where it is installed. For a Copilot, it hasn't run on this computer yet: start it once (in an IDE, open Copilot Chat) and open **Connect…** again, or add the settings shown yourself.
 - **"… isn't JSON the app can read, so it's left as it is"**: the Copilot's list of MCP servers has a mistake in it. Put it right (the message names the file), or add the settings shown yourself.
