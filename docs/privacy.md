@@ -18,7 +18,7 @@ The app has no account and no server of its own, and sends no analytics. The age
 - **Azure DevOps or GitHub**: to read the PRs, their comments and builds, and to clone the repositories. Writes (comments, replies, votes) happen only after you confirm each one.
 - **The model provider you picked** (Anthropic for Claude, GitHub for Copilot, the provider you connected in OpenCode): the agent's prompt and what it reads from the PR's checkout to answer it, the files you've attached to the PR included. That's how a review works: the code it reviews goes to the model. Use a provider your organization allows for its code.
 - **OpenCode Zen**, only if you turn on **Offer OpenCode Zen's free models** in Settings → OpenCode (it's off): those models work without signing in, but most may keep what they're sent to train on, so a review would share the PR's code. Leave it off for work code.
-- **Your own coding agent's AI provider**, only if you turn on [Coding agents](coding-agents.md) and connect one: what your agent reads from AzTech (pull request text, comments, findings) goes to it, as anything you paste into it would. Nothing reaches your agent unless it asks, with a token you gave it.
+- **Your own coding agent's AI provider**, only if you turn on [Coding agents](coding-agents.md) and connect one: what your agent reads from AzTech (pull request text, the code it changes, comments, findings) goes to it, as anything you paste into it would. Nothing reaches your agent unless it asks, with a token you gave it.
 - **The package registry**, once per agent: the agent's runtime is downloaded the first time it's needed, and checked against the exact version the app expects.
 - **The releases page on GitHub**: to check for updates and download them.
 
