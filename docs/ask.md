@@ -7,7 +7,7 @@ Ask the agent that reviewed the PR about anything: a finding, the PR as a whole,
 ## About the review or a finding
 
 - **The whole PR**: the **Ask** tab of a review ("Does this retry 4xx errors too?").
-- **A finding**: **Ask** on the finding opens its question box ("Is this really reachable?"). **Use as comment** puts the answer in the finding's comment, for you to edit before you post. Once it has questions, the conversation is folded to one line under the finding (how many questions, and the first): click it, or **Ask**, to open it.
+- **A finding**: **Ask** on the finding opens its question box ("Is this really reachable?"). **Use as comment** puts the answer in the finding's comment, for you to edit before you post. Once it has questions, the conversation is folded to one line under the finding (how many questions, and the first): click it, or **Ask**, to open it. A question your [coding agent](coding-agents.md) asked about the finding is there too, marked **from Claude Code** (or whichever agent asked), with its answer.
 
 The agent carries on from its review, so it remembers what it read and found. If the PR has new commits since, it knows that, and reads the new code when the question needs it.
 
