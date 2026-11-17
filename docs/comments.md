@@ -17,6 +17,8 @@ From here you can:
 
 Each of these shows a confirmation with exactly what will change before anything is posted. Or keep your comments and replies in your drafts and post them together: see [Drafts](#drafts).
 
+On GitHub, comments from bots that post test results, coverage and the like (github-actions, Dependabot, SonarCloud…) are hidden, and left out of the counts. The bot button at the top of the tab says how many there are, and shows them or hides them again. Code reviewers such as Copilot always show, like people's comments, and so does a bot's comment once someone replies to it.
+
 **Ask AI** on a thread asks an agent about it. See [Asking the agent](ask.md#about-a-comment-thread).
 
 ## Answer your reviewers
