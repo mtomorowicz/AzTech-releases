@@ -28,6 +28,8 @@ Sent here from [Answer your reviewers](comments.md#answer-your-reviewers), the t
 
 When the agent says it fixed findings, they're marked **Fixed** in their review, and the session says which. You can take a mark back on the finding in the main window. A re-review after you push checks them.
 
+When it says it fixed what a comment thread asks, the session says which thread too. Nothing changes on the PR yet: once you've pushed, **Changes** offers to reply to those threads and resolve them (see [Check the fixes](#check-the-fixes)).
+
 ![A fix session: the agent asks to run the tests](images/fix-session.png)
 
 - **Edits** to files in your folder go ahead.
@@ -73,6 +75,8 @@ Both wait while the agent is working. The agent is refused `git commit` and `git
 
 ## Check the fixes
 
-After a push, **Re-review the changes** reviews what changed since the review, and checks whether the findings are fixed. The agent that reviewed the PR does it: the fixing agent if it did, with the session's model and effort; otherwise the agent that did, with its own model and the session's effort. The button's tooltip says which. The re-review shows in the main window, with the open comment threads the push looks to address: tick the ones to resolve, change the reply if you like, and **Resolve** them together after one confirmation.
+After a push, the comment threads the agent said it fixed before it are listed under the push, each ticked, with "Fixed in" and the pushed commit as the reply. Untick a thread whose fix you didn't push (the list says when your folder still has changes), change the reply or clear it, and **Reply and resolve** them together after one confirmation. A thread someone resolved in the meantime is left as it is.
+
+**Re-review the changes** reviews what changed since the review, and checks whether the findings are fixed. The agent that reviewed the PR does it: the fixing agent if it did, with the session's model and effort; otherwise the agent that did, with its own model and the session's effort. The button's tooltip says which. The re-review shows in the main window, with the open comment threads the push looks to address: tick the ones to resolve, change the reply if you like, and **Resolve** them together after one confirmation.
 
 See [Fix your own PR](how-to/fix-your-own-pr.md) for a walk-through.
