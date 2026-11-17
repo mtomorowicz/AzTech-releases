@@ -125,6 +125,8 @@ Have your own work reviewed before anyone else sees it: <kbd>Ctrl</kbd>+<kbd>K</
 
 The review reads what your branch adds since it left the target: its commits, including ones you haven't pushed yet. Changes you haven't committed aren't part of it, and the review says how many files have them. The agent works in the app's own copy, so your checkout isn't changed. Nothing is posted: the findings are for you, to fix before you open the PR. **Export…** saves them as a Markdown file.
 
+Your own [coding agent](coding-agents.md) can ask for this review too, once you've linked the checkout and allowed it to start reviews, and get the findings to fix. The review's log says which agent asked, and the bell says when it starts and when it's ready: its note opens this dialog on that repository.
+
 The latest review of each repository is kept on this computer, and shows when you open it again. Branch reviews, and PR descriptions an agent writes for you, count in **Usage and spend** and towards your monthly budget.
 
 ## Several reviews at once
