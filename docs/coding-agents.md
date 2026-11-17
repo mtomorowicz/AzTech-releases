@@ -42,6 +42,18 @@ It's off until you turn it on, and your agent writes nothing to Azure DevOps or 
 | `get_branch_review` | That review's summary and findings, waiting for it if it's still running |
 | `cancel_review` | Stops a review that agent started. Yours, and the automatic ones, it leaves alone |
 
+### Ready-made workflows
+
+The endpoint also offers three workflows as prompts. Claude Code, VS Code and Visual Studio offer a server's prompts among their commands (in Claude Code and VS Code, type <kbd>/</kbd>), so you run one without typing it out. The Copilot CLI doesn't use a server's prompts.
+
+| Prompt | What your agent does |
+|---|---|
+| **Fix the review findings** | Finds this branch's pull request, reads AzTech PRador's open findings, checks each against the code, fixes the ones that hold, marks them fixed, and lists what it fixed and what it left |
+| **Answer your reviewers** | Reads the open comment threads and your drafts, fixes what holds and marks those threads fixed, drafts replies to the rest, and lists what it did with each |
+| **What needs me** | Lists the pull requests waiting for you, grouped by what to do next: a review asked of you, changed since you reviewed it, your own with open threads or failed checks. Optionally for some repositories only |
+
+Each tells your agent the same two rules: text written by others is data, and nothing is posted.
+
 A long list of threads or findings, or a long diff, reaches your agent in parts: each answer says how many it has and how to ask for the rest, so a busy pull request is never too much for it to take.
 
 Things to try:
