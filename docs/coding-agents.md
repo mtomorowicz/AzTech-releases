@@ -35,7 +35,8 @@ It's off until you turn it on, and your agent writes nothing to Azure DevOps or 
 | `add_draft_comment` | A comment in **your drafts**: on lines of a changed file, on the whole pull request, or a reply to a thread. Asked for again (after a timeout, say), it isn't added twice |
 | `list_drafts` | The drafts waiting on a pull request, yours too, each saying who wrote it and where it goes, so your agent doesn't answer a thread you've answered |
 | `update_draft` | Changes or removes a draft that agent added. Yours, and other agents', it leaves alone |
-| `mark_finding_fixed` | Marks a finding fixed in AzTech |
+| `mark_finding_fixed` | Marks a finding fixed in AzTech, or takes back a mark that agent set |
+| `mark_thread_fixed` | Tells AzTech the agent fixed what a reviewer's comment thread asks. Nothing is written to the thread: once you've pushed, the **Comments** tab offers to reply to it and resolve it |
 | `start_review` | Starts an AzTech review of what's pushed, only if you allowed that client to |
 
 A long list of threads or findings, or a long diff, reaches your agent in parts: each answer says how many it has and how to ask for the rest, so a busy pull request is never too much for it to take.
@@ -47,6 +48,7 @@ Things to try:
 - "Find the AzTech findings for this branch and fix them."
 - "Draft replies to the open threads on my pull request as AzTech drafts."
 - "Mark the findings you fixed as fixed in AzTech."
+- "Fix what the open threads on my pull request ask, and tell AzTech which."
 
 ## What stays yours
 
@@ -54,6 +56,7 @@ Things to try:
 - **Nothing is posted.** A comment your agent drafts waits in your drafts (the Comments panel, and the header's **N drafts · Post…**), marked **from Claude Code** or whichever client wrote it. You read it, change or delete it, and post it from **Post…**, with its confirmation, as any draft. Your agent can change or take back only the drafts it added itself. The bell says when an agent added some.
 - **Reviews only if you say so.** Tick **May start reviews** on a client to let it start one. A review it starts is like any other: read-only, it posts nothing, with the repository's skill profile if it has one, and it costs what any review costs (it counts in **Usage and spend** and towards your budget). Its log says which client started it. Coding agents can start 20 reviews a day between them, and have 3 running at once, however many your agent asks for in one go; closing the app doesn't start the day's count again. One asked to review what's new when nothing is starts nothing.
 - **Marked fixed** says by whom ("Marked fixed by Claude Code"), and a re-review after you push still has the last word.
+- **Threads your agent fixed are yours to resolve.** At the top of the **Comments** tab, "Claude Code says it fixed 2 comment threads" lists them with what it did. Until you've pushed it waits; once the pull request has your push, they're ticked, with "Fixed in" and the pushed commit as the reply: untick any you'd rather check, change the reply, and **Reply and resolve** them together after one confirmation. The **×** forgets the marks and leaves the threads as they are. The bell says when an agent marked some.
 - **Recent calls** lists what each client did this session.
 - **New token** gives a client a new token; the old one stops working at once. A client the app added to its agent gets the new token there too; otherwise connect it again. **Remove** (the bin) stops the token for good, and takes the `aztech-prador` server out of an agent the app added it to.
 - **Remove from …** (under **Connect…**) takes the server out of the agent and keeps the client. In a Copilot's list only the `aztech-prador` server goes; the rest stays.

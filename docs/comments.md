@@ -39,6 +39,10 @@ On **your own PR**, the threads your reviewers left open can be answered togethe
 
 Each thread shows what's been done with it already (**In your drafts**, **Replied and resolved**, **Sent to fix mode**), so nothing goes twice. Reading the threads posts nothing; it costs what a question to the agent costs, and counts in **Usage and spend**. The reviewers' words go to the agent as data: they can shape a drafted reply, which you read before it goes anywhere, but not what the agent does.
 
+## Threads your coding agent fixed
+
+When your own [coding agent](coding-agents.md) fixes what a reviewer's thread asks, in your checkout, it can tell AzTech PRador which thread. The top of the **Comments** tab then says so ("Claude Code says it fixed 2 comment threads"), with each thread and what the agent did. Until you've pushed, it waits. Once the pull request has your push, the threads are ticked, with "Fixed in" and the pushed commit as the reply: untick any you'd rather check, change the reply, and **Reply and resolve** them together, after one confirmation. **×** forgets the marks and leaves the threads as they are, and a thread resolved some other way leaves the list by itself. **Answer your reviewers** and fix mode leave these threads out, so you aren't offered them twice.
+
 ## Threads in the diff
 
 Threads also show in the diff, under their lines, the way Azure DevOps shows them. You can reply, resolve and edit there too. The **Comments** toggle above the diff hides them.
