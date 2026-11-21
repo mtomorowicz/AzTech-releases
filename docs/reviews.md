@@ -89,6 +89,20 @@ When two or more agents have reviewed the PR, the panel has a **Compare** tab. I
 
 To ask the agent about a finding before you decide, see [Asking the agent](ask.md).
 
+## Verify findings
+
+Findings can be wrong, and a push can fix them. **Verify findings…**, on the review's summary card and in the **Compare** tab, has an agent check each open finding against the PR as it is now: whether it **still applies**, was **fixed since**, is **not an issue**, or the agent is **unsure**. It's for before you post: you see which findings hold up, whoever wrote them.
+
+1. Pick the agent under **Verified by**: one of those set up on this machine, each with the model and effort it uses (Settings' for that agent). Your default agent is picked to begin with. It can be another agent than the one that wrote the findings.
+2. The dialog says what it checks: the open findings of each agent's latest review, the one its tab shows (not the ones you dismissed or posted, or that are fixed), and what it may cost. With Claude, a check stops at $2; what it hasn't checked by then shows as **Not verified**. Copilot and OpenCode have no such cap: the findings go a few at a time, and each batch costs about what a short review does.
+3. **Verify**. While it runs, the summary card and **Compare** show how far it is ("3 of 7 done"), and **Stop** stops it. It goes through the findings a few at a time, keeping each batch's verdicts as they come.
+
+Each finding then shows the agent's verdict: a chip such as **Claude: Still applies**, its reason in a sentence, and the line of code that shows it (click it to see that line in the diff). For a finding that still applies, **now at** says where it is at the PR's head. When the agent rates a finding differently from its card, it says so: "Claude rates it low". The app checks that line is really there: a verdict whose evidence isn't in the code, or a "fixed since" on lines that haven't changed since the review, shows as **Unsure**, with what didn't check out. A finding the agent left out, or answered in a way that isn't a verdict, shows as **Not verified**, saying so; so does one in a submodule, whose files aren't in the checkout.
+
+The line on the summary card counts every finding once: "Checked by Claude (Opus 5, high) at 9f8e7d6: 4 still apply, 1 fixed since, 1 not an issue, 1 unsure · $0.41". **Verify again** checks them anew. When the PR moves on, or an agent reviews it again, the verdicts and that line are greyed and say why: verify again to check the findings as they are now.
+
+Verifying changes nothing in the reviews: the findings stay as they were, and nothing is hidden, unticked or posted. You still keep, dismiss and post each one yourself. A check doesn't count as a review: the PR isn't marked reviewed by it. It reads only, in the app's copy of the PR, and never opens anything outside it. It can't start while a review of the PR is running, and only you start one: never on its own, and never one of your coding agents. Each check counts in **Usage and spend** as a verification.
+
 ## Post
 
 **Review & post** shows exactly what will go on the PR:
@@ -141,7 +155,7 @@ Each review shows what it cost: dollars for Claude and OpenCode, AI Credits for 
 
 ### Usage and spend
 
-**Usage and spend** is a section of Settings (the gear in the title bar, then **Usage and spend** in its side nav; or <kbd>Ctrl</kbd>+<kbd>K</kbd> → "Usage and spend"; or the link under **Monthly AI budget**), with two tabs. **Limits** shows how much of each allowance is used, where its maker says. **Spend** adds up the spend: today, the last 7 days, this month, or everything kept on this computer. It shows what was spent, how many reviews (and how many of them automatic) and questions, by agent and by repository: dollars, and Copilot's AI Credits in a column of their own. It also shows the follow-up questions by how long after the session's last call they came: within 5 minutes, a question re-reads the session cheaply from the provider's cache; later, it pays to read all of it again.
+**Usage and spend** is a section of Settings (the gear in the title bar, then **Usage and spend** in its side nav; or <kbd>Ctrl</kbd>+<kbd>K</kbd> → "Usage and spend"; or the link under **Monthly AI budget**), with two tabs. **Limits** shows how much of each allowance is used, where its maker says. **Spend** adds up the spend: today, the last 7 days, this month, or everything kept on this computer. It shows what was spent, how many reviews (and how many of them automatic), questions and verifications ([Verify findings](#verify-findings)), by agent and by repository: dollars, and Copilot's AI Credits in a column of their own. It also shows the follow-up questions by how long after the session's last call they came: within 5 minutes, a question re-reads the session cheaply from the provider's cache; later, it pays to read all of it again.
 
 Set a **Monthly AI budget** in Settings → **General**, under **Refresh and budget**, to be told, in the bell, when the month's spend passes it. Copilot's AI Credits aren't dollars, so they don't count towards it.
 

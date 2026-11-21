@@ -19,7 +19,7 @@ A Windows app for reviewing pull requests on **Azure DevOps** and **GitHub**, wi
 ## Using the app
 
 - [Pull requests](pull-requests.md): the list, filters, builds, projects, the diff, Azure DevOps and GitHub.
-- [Reviews](reviews.md): running a review, the findings, posting and votes.
+- [Reviews](reviews.md): running a review, the findings, checking them against the PR as it is now, posting and votes.
 - [Asking the agent](ask.md): questions about a finding, the PR, a thread or some lines.
 - [Comments](comments.md): threads, replies, and commenting on code.
 - [Fix mode](fix-mode.md): an agent fixing your own PR in your checkout.

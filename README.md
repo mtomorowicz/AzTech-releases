@@ -47,7 +47,7 @@ The app signs in through these tools. It stores no Azure DevOps password or toke
 ### Using the app
 
 - [Pull requests](docs/pull-requests.md): the list, filters, builds, projects, the diff, Azure DevOps and GitHub.
-- [Reviews](docs/reviews.md): running a review, the findings, posting and votes.
+- [Reviews](docs/reviews.md): running a review, the findings, checking them against the PR as it is now, posting and votes.
 - [Asking the agent](docs/ask.md): questions about a finding, the PR, a thread or some lines.
 - [Comments](docs/comments.md): threads, replies, and commenting on code.
 - [Fix mode](docs/fix-mode.md): an agent fixing your own PR in your checkout.
