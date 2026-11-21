@@ -85,7 +85,7 @@ The app keeps the newest five reviews of a PR by each agent (**Reviews kept of a
 
 ## Compare the agents' reviews
 
-When two or more agents have reviewed the PR, the panel has a **Compare** tab. It lists their open findings by place: the file and lines, with the findings of every agent that flagged it. Places more than one agent flagged come first, marked with how many agree: that's usually where to look first. **Only where they agree** hides the rest. Click a finding to open it in its agent's tab, where you keep, edit or dismiss it; click the place to go there in the diff.
+When two or more agents have reviewed the PR, the panel has a **Compare** tab. It lists their open findings by place: the file and lines, with the findings of every agent that flagged it, each with its comment (your edit, when you made one). Places more than one agent flagged come first, marked with how many agree: that's usually where to look first. **Only where they agree** hides the rest. Click a finding's title to open it in its agent's tab, where you keep, edit or dismiss it; click the place to go there in the diff.
 
 To ask the agent about a finding before you decide, see [Asking the agent](ask.md).
 
