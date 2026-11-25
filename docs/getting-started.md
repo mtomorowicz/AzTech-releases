@@ -53,6 +53,10 @@ Then click **Save changes** at the bottom (**Continue** the first time). Your ch
 
 Each agent needs its runtime, about 40–110 MB, downloaded once and kept: Claude's with its first review, Copilot's and OpenCode's when you check them in Settings or open their tab. An update of the app sometimes brings a newer one.
 
+## Appearance
+
+Settings → **General** → **Appearance** picks the look. **Theme** is **Dark**, **Light** or **Same as Windows**, which follows Windows' light or dark mode as it changes. **Colours told apart with colour blindness** swaps the colours that carry meaning for ones that stay distinct with the common kinds of colour blindness: added lines in blue and removed ones in orange, bluish green for good, orange for a warning, vermilion for danger, and a finding's severity from vermilion through orange and yellow to sky blue. The words stay the same everywhere, so nothing is said by colour alone. What you pick shows at once, in every window; **Save changes** keeps it, and **Cancel** or **Discard** puts the saved look back.
+
 ## Your first review
 
 1. Pick a PR in the list on the left. **Needs me** shows the ones waiting on you.
